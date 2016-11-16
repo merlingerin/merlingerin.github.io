@@ -70,7 +70,9 @@
 .stn-portfolio {
   &:extend(.stn-padding);
   .horizontal-nav {
-    float: right;
+    float: right; 
+
+    
   }
   .stn-heading {
     margin-bottom: 80px;
@@ -314,5 +316,19 @@
   
   @media (max-width: 760px) {
     margin-top: 0;
+  }
+}
+
+@media( max-width: 992px) {
+  .stn-portfolio {
+    
+ .horizontal-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: @overlay;
+   }
   }
 }
