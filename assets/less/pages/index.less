@@ -1,4 +1,5 @@
 .site-header {
+  height: 100vh;
   .bg-img('hero-img.jpg');
   -ms-behavior: url(/assets/ie8-support/backgroundsize.min.htc);
   img {
@@ -18,13 +19,22 @@
   margin: 250px 0;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 3em;
   text-align: center;
-  span {
-    background-color: fade(@overlay, 85%);
-    padding: 0 20px;
+  &:after {
+    margin: 0 auto;
+    display: block;
+    content: ' ';
+    background-color: @accent;
+    width: 85px;
+    height: 4px;
+    margin-top: 49px;
   }
+//  span {
+//    background-color: fade(@overlay, 85%);
+//    padding: 0 20px;
+//  }
 }
 
 //*SECTION SERVICES
@@ -49,7 +59,7 @@
 } //.stn-service
 .stn-heading {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2.143em;
   margin-bottom: 40px;
   margin-top: 0;
@@ -59,7 +69,7 @@
     background-color: #fff;
     width: 45px;
     height: 2px;
-    margin-top: 10px;
+    margin-top: 37px;
   }
   &.black-line:after {
     background-color: @font;
@@ -69,6 +79,7 @@
 //.stn-portfolio
 .stn-portfolio {
   &:extend(.stn-padding);
+  color: @font;
   .horizontal-nav {
     float: right; 
 
@@ -155,8 +166,14 @@
   &:extend(.stn-padding);
   background-color: #515f67;
   color: #fff;
+  p {
+    font-weight: 200;
+  }
   
   .btn-ghost-grey {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    font-weight: 200;
     margin-bottom: 50px;
   }
 }
@@ -199,6 +216,9 @@
   &:extend(.stn-padding);
   .bg-img('camera.jpg');
   color: #fff;
+  P {
+    font-weight: 200;
+  }
 }
 
 .social-links {
@@ -237,7 +257,7 @@
 
 .stn-testimonials {
  &:extend(.stn-padding);
-  
+  color: @font;
   .stn-heading .icon-quote {
     color: #515f67;
     font-size: 28px;
