@@ -2028,6 +2028,7 @@ p {
   margin-bottom: 25px;
 }
 .site-header {
+  height: 100vh;
   background-image: url('../img/hero-img.jpg');
   background-position: center center;
   background-repeat: no-repeat;
