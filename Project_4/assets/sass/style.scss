@@ -1,0 +1,11 @@
+//boostrap file includes only grid system, forms and responsive utilities
+@import "../css/bootstrap.css";
+@import "components/variables";
+@import "components/mixins";
+@import "components/base";
+
+
+@import "components/font";
+@import "components/icons";
+@import "components/interface";
+@import "pages/index";      
