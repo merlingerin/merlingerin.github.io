@@ -1,0 +1,43 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e905";
+  font-size: em(22px);
+  color: #bec8c8;
+}
+.icon-twitter:before {
+  content: "\e903";
+  font-size: em(30px); 
+}
+.icon-github:before {
+  content: "\e900";
+  @extend .icon-twitter;
+}
+.icon-dribbble:before {
+  content: "\e901";
+  @extend .icon-twitter;
+}
+.icon-instagram:before {
+  content: "\e902";
+  @extend .icon-twitter;
+}
+
+.icon-facebook:before {
+  content: "\e904";
+  @extend .icon-twitter;
+}
+
+

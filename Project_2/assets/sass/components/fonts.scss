@@ -1,0 +1,24 @@
+
+@font-face {
+  @include add-font('opensans_extrabold/OpenSans-ExtraBold-webfont', 'OpenSans', 800);
+}
+
+@font-face {
+  @include add-font('opensans_bold/OpenSans-Bold-webfont', 'OpenSans', 600);
+}
+
+@font-face {
+  @include add-font('opensans_semibold/OpenSans-Semibold-webfont', 'OpenSans', 500);
+}
+
+@font-face {
+  @include add-font('opensans_regular/OpenSans-Regular-webfont', 'OpenSans', 300);
+}
+
+@font-face {
+  @include add-font('opensans_light/OpenSans-Light-webfont', 'OpenSans', 200);
+}
+
+@font-face {
+  @include add-font('icons/icons', 'icons', 300)
+}

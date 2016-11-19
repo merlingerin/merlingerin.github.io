@@ -1,0 +1,75 @@
+@mixin add-font($font-url, $font-family, $font-weight, $font-style: normal) {
+    font-family: $font-family;
+      src: url('#{$font-folder}#{$font-url}.eot');
+      src: url('#{$font-folder}#{$font-url}.eot?#iefix') format('embedded-opentype'),
+           url('#{$font-folder}#{$font-url}.woff') format('woff'),
+           url('#{$font-folder}#{$font-url}.ttf') format('truetype'),
+           url('#{$font-folder}#{$font-url}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+
+@mixin transition($prop: all, $time: .3s, $ease: ease-in-out) {
+  transition: $prop $time $ease;
+}
+
+@mixin img-bg($img, $pos: center center, $att: scroll) {
+  background-image: url('#{$img-folder}#{$img}');
+  background-repeat: no-repeat;
+  background-position: $pos;
+  background-size: cover;
+  background-attachment: $att;
+}
+
+//underline with hear for titles
+@mixin title-underline {
+  &:after {
+    content: '  ';
+    @include img-bg('heart.png');
+    display: inline-block;
+    width: 90px;
+    height: 1px;
+    color: #dce1e5;
+  }
+}
+
+@mixin underline-title($right, $left) {
+      margin-bottom: 75px;
+      margin-top: 0px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #0eb493;
+      font-size: 1.750em;
+      font-weight: 800;
+      font-family: 'OpenSans';
+      &:before {
+          content: ' ';
+          display: inline-block;
+          background-color: #0eb493;
+          width: 91px;
+          height: 1px;
+          margin-right: $right;
+          margin-bottom: -32px;
+      }
+      &:after {
+          content: ' ';
+          display: inline-block;
+          background-color: #0eb493;
+          width: 91px;
+          height: 1px;
+          margin-left: $left;
+          margin-bottom: -32px;
+      }
+}
+@mixin head-title {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    // .head-title {
+    //   @include underline-title;
+    //   margin-bottom: 75px;
+    //   }
+    .sub-text {
+      text-align: center;
+      }
+}
