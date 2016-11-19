@@ -1,0 +1,212 @@
+.st_header {
+  padding-top: 56px;
+  padding-bottom: 30px;
+  .top_header {
+    .language {
+      padding-left: 0;
+      li {
+        display: inline-block;
+        margin-right: 23px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font-size: em(16);
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+nav {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  .header_nav {
+    .header_nav-list {
+      text-align: justify;
+      &:after {
+        content: "";
+        width: 100%;
+        display: inline-block;
+        height: 0;
+      }
+      li {
+        padding-top: 2%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i {
+        display: block;
+        width: 6px;
+        height: 6px;
+        @include img-bg('dot.png');
+      }
+    }
+  }
+}
+
+.main_bg {
+  border-bottom: 2px solid #e6e6e6;
+  margin: auto;
+  .st_main_bg {
+    .main_bg-img {
+      @include img-bg('bg.jpg');
+      height: 650px;
+    }
+  }
+}
+
+.main_section {
+  margin-bottom: 49px;
+}
+
+.main_content {
+  .news {
+    .news-header {
+      .news-img {
+        margin: 72px auto 33px auto;
+        display: block;
+        width: 43px;
+        height: 42px;
+        @include img-bg('news.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+  .analitics-header {
+    .analitics-img {
+      margin: 72px auto 33px auto;
+      display: block;
+      width: 43px;
+      height: 42px;
+      @include img-bg('analitics.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+.about_us {
+  .about_us-header {
+    color: $active-color;
+    text-align: center;
+    .about_us-img {
+      @include img-bg('about.png');
+      display: block;
+      height: 60px;
+      width: 60px;
+      margin: auto;
+      margin-top: 55px;
+      margin-bottom: 30px;
+    }
+  }
+  .about_us-describe {
+    margin-bottom: 84px;
+    line-height: 1.8em;
+    overflow: hidden;
+  }
+}
+
+.center {
+  border-left: $mb;
+  border-right: $mb;
+}
+
+footer {
+  border-top: $mb;
+  padding-top: 35px;
+  .st_footer {
+  .addres {
+    padding: 0;
+    .footer-addres {
+      display: block;
+      width: 100%;
+      margin-bottom: 37px;
+      font-weight: 300;
+      font-size: 1em;
+      &:before {
+        @include transition();
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 30px;
+        width: 23px;
+        height: 23px;
+        content: "";
+        @include img-bg('direct.png');
+        background-size: contain;
+      }
+      &:hover:before {
+        @include img-bg('direct-active.png');
+        background-size: contain;
+      }
+    }
+    .footer-mail {
+      @extend .footer-addres;
+      &:before {
+        @include transition();
+        @include img-bg('mail.png');
+        background-size: contain;
+      }
+      &:hover:before {
+        @include img-bg('mail-active.png');
+        background-size: contain;
+      }
+    }
+  }
+  .telephone {
+    margin-bottom: 30px;
+    font-size: 1em;
+    font-weight: 300;
+    .tel-img {
+      @include img-bg('phone.png');
+      background-position: bottom left;
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      vertical-align: bottom;
+      margin-right: 10px;
+    }
+    .tel-link {
+      margin-right: 30px;
+      &:hover {
+        i {
+          @include img-bg('phone-active.png');
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .social {
+    display: block;
+    .facebook {
+      margin-right: 22px;
+      width: 27px;
+      height: 27px;
+      display: inline-block;
+      @include img-bg('facebook.png');
+      background-size: contain;
+      &:hover {
+        @include img-bg('facebook-active.png');
+      }
+    }
+    .linkedIn {
+      width: 27px;
+      height: 27px;
+      display: inline-block;
+      @include img-bg('linkedIn.png');
+      background-size: contain;
+      &:hover {
+        @include img-bg('linkedIn-active.png');
+      }
+    }
+  }
+  }
+
+}
+
