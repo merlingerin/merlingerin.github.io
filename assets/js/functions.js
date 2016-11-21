@@ -2,6 +2,19 @@
     
   'use strict';
 
+  $(document).resize(function () {
+	  var 	$screen = $(window),
+	  		$elements = $('.wow');
+
+	  	  	console.log($elements);
+	  //  if ($screen.width < 768) {
+	  //   $(".wow").hide();
+	  // }
+	  //    else {
+	  //      $(".class2").show();
+	  //     }
+  });
+
   $(document).ready(function () {
     function blueasyTabs() {
           var $wrapper = $('.tab-wrapper'),

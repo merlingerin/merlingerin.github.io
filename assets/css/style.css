@@ -1939,6 +1939,8 @@ select[multiple].input-lg {
     left: 0;
     width: 100%;
     background-color: #48525a;
+    opacity: .9;
+    z-index: 1;
   }
   .site-nav .horizontal-nav li {
     width: 100%;
@@ -2063,6 +2065,12 @@ p {
   width: 85px;
   height: 4px;
   margin-top: 49px;
+}
+@media (max-width: 640px) {
+  .hero-heading {
+    margin: 100px 0;
+    font-size: 2em;
+  }
 }
 .stn-services {
   background-color: #4bcaff;
@@ -2249,6 +2257,7 @@ p {
 }
 .social-links li {
   display: inline-block;
+  margin-right: 20px;
 }
 .social-links a {
   display: table;
@@ -2258,7 +2267,6 @@ p {
   font-size: 30px;
   text-align: center;
   border: 2px solid #fff;
-  margin-right: 20px;
   transition: all 0.3s ease-in-out;
 }
 .social-links a:hover {
@@ -2269,6 +2277,17 @@ p {
 .social-links a i {
   display: table-cell;
   vertical-align: middle;
+}
+@media (max-width: 640px) {
+  .social-links {
+    text-align: center;
+  }
+  .social-links li {
+    margin-right: 10px;
+  }
+  .social-links li:last-child {
+    margin-right: 0;
+  }
 }
 .stn-testimonials {
   color: #515f67;
@@ -2337,6 +2356,9 @@ p {
   }
 }
 @media (max-width: 992px) {
+  .stn-portfolio .trigger-nav {
+    display: none;
+  }
   .stn-portfolio .horizontal-nav {
     display: none;
     position: absolute;
@@ -2344,5 +2366,32 @@ p {
     left: 0;
     width: 100%;
     background-color: #48525a;
+  }
+}
+@media (max-width 760px) {
+  .wow {
+    animation: none;
+  }
+  .fadeInUp {
+    animation: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wow {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
   }
 }
