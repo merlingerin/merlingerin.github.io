@@ -1,0 +1,28 @@
+{
+  "name": "law-company",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": " \"lite-server\" ",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "lite": "^3.0.9"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

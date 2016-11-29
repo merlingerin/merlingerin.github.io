@@ -1,0 +1,87 @@
+
+//**************MAIN MIXINS
+@mixin add-font($font-url, $font-family, $font-weight, $font-style: normal) {
+    font-family: $font-family;
+      src: url('#{$font-folder}#{$font-url}.eot');
+      src: url('#{$font-folder}#{$font-url}.eot?#iefix') format('embedded-opentype'),
+           url('#{$font-folder}#{$font-url}.woff') format('woff'),
+           url('#{$font-folder}#{$font-url}.ttf') format('truetype'),
+           url('#{$font-folder}#{$font-url}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@mixin trn($prop: all, $time: .3s, $ease: ease-in-out) {
+  transition: $prop $time $ease;
+}
+
+@mixin img-bg($img, $pos: center center, $att: scroll) {
+  background-image: url('#{$img-folder}#{$img}');
+  background-repeat: no-repeat;
+  background-position: $pos;
+  background-size: cover;
+  background-attachment: $att;
+}
+
+@mixin title($text-color) {
+  color: $text-color;
+  font-size: em(47px);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+//****************************
+//CONVERTER FROM PX to EM
+
+@function em($px, $base: $base-font-size) {
+  @return ($px / $base) * 1em;
+}
+
+@mixin block__text_iconed($color: $grey-text, $fs: 38px, $width: 98px, $height: 98px, $lh: 2.5) {
+      display: block;
+      .block__icon {
+          &_circled {
+              @extend .block__icon; 
+              border: 3px solid #007ecf;
+              border-radius: 50%;
+          }
+          display: block;
+          font-size: $fs;
+          width: $width;
+          height: $height;
+          color: $color;
+          text-align: center;
+          line-height: $lh;
+          margin: 0 auto;
+          margin-bottom: 20px;
+      }
+      .block__text {
+          display: block;
+          text-align: center;
+          color: $color;
+      }
+}
+
+@mixin placeholder-color($color) {
+      &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        /* Firefox 18- */
+        color: $color;
+    }
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin social($color, $size, $ml) {
+  display: block;
+  color: $color;
+  font-size: $size;
+  margin-left: $ml;
+}

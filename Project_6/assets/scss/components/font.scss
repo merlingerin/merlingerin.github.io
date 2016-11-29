@@ -1,0 +1,22 @@
+@font-face {
+  @include add-font('lato-bold/lato-bold', 'Loto', 700);
+}
+
+@font-face {
+  @include add-font('lato-regular/lato-regular', 'Loto', 400);
+}
+
+@font-face {
+  @include add-font('lato-light/lato-light', 'Loto', 300);
+}
+
+@font-face {
+  @include add-font('icomoon/icomoon', 'icomoon', 400);
+}
+
+// @font-face {
+//   @include add-font('icons/icomoon', 'icomoon', 400);
+// }
+
+ 
+
