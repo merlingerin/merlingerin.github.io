@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KSD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!--if lt IE 8
+    p.chromeframe.
+    You are using an <strong>outdated</strong> browser.
+    Please <a href="http://browsehappy.com/">upgrade your browser</a>
+    to improve your experience.
+    -->
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <header class="header clearfix">
+          <div class="container">
+            <div class="header__logo"><a class="logo__link" href="javascript:void"><img class="logo__img" src="images/logo.png" alt="logo"></a></div>
+            <nav class="header__nav">
+              <ul class="h-menu">
+                <li class="h-menu__item"><a class="menu__link" href="javascript:void(0)">О конференции</a>
+                  <svg class="menu-img canvasAnim" height="100" width="100">
+                    <polygon points="5,5 95,25 50,90" style="fill:none;stroke:white;stroke-width:4"></polygon>
+                  </svg>
+                </li>
+                <li class="h-menu__item"><a class="menu__link" href="javascript:void(0)">Спикеры</a>
+                  <svg class="menu-img canvasAnim" height="100" width="100">
+                    <polygon points="5,5 95,25 50,90" style="fill:none;stroke:white;stroke-width:4"></polygon>
+                  </svg>
+                </li>
+                <li class="h-menu__item"><a class="menu__link" href="javascript:void(0)">Расписание</a>
+                  <svg class="menu-img canvasAnim" height="100" width="100">
+                    <polygon points="5,5 95,25 50,90" style="fill:none;stroke:white;stroke-width:4"></polygon>
+                  </svg>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="header__hero">
+          <div class="container">
+            <h1 class="hero__title">Одно из крупнейших <br> мероприятий про данные <br> в Восточной Европе</h1>
+            <p class="hero__sub-title">Этот фестиваль – главная площадка, где встречаются и <br> делятся знаниями люди, заинтересованные в развитии <br> больших данных и машинного обучения.</p>
+          </div>
+        </div>
+        <div class="header__btn">
+          <div class="container">
+            <button class="btn btn__btn-start_centered" action="#!"> <span class="btn__text">Старт</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="header__organisation">
+        <div class="container">
+          <div class="organisation__content"><span class="organisation__text_bold">Организатор конференции:</span><img class="organisation__img" src="images/triangular-logo.png"><span class="organisation__text">Data-Driven Digital Agency Septa.</span></div>
+        </div>
+      </div>
+      <section class="short-description">
+        <div class="container">
+          <div class="row">
+            <div class="short-description__one-third col-lg-3">
+              <div class="one-third__header">
+                <div class="img__wrapper"><img class="one-third__img" src="images/speeker.png"></div>
+                <svg class="desc-svg" height="135" width="135">
+                  <polygon points="5,5 130,35 40,130" style="fill:none;stroke:#f5f5f5;stroke-width:4"></polygon>
+                </svg>
+              </div>
+              <h3 class="one-third__text">2 топ спикера<br> из Европы и США</h3>
+            </div>
+            <div class="short-description__one-third col-lg-4 col-lg-offset-1">
+              <div class="one-third__header">
+                <div class="img__wrapper"><img class="one-third__img" src="images/double-button.png"></div>
+                <svg class="desc-svg" height="135" width="135">
+                  <polygon points="5,5 130,35 40,130" style="fill:none;stroke:#f5f5f5;stroke-width:4"></polygon>
+                </svg>
+              </div>
+              <h3 class="one-third__text">2 потока <br> для Бизнеса и разработчиков </h3>
+            </div>
+            <div class="short-description__one-third col-lg-3 col-lg-offset-1">
+              <div class="one-third__header">
+                <div class="img__wrapper"><img class="one-third__img" src="images/orator.png"></div>
+                <svg class="desc-svg" height="135" width="135">
+                  <polygon points="5,5 130,35 40,130" style="fill:none;stroke:#f5f5f5;stroke-width:4"></polygon>
+                </svg>
+              </div>
+              <h3 class="one-third__text">Более 15 докладчиков</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <div class="video__wrapper col-lg-6"><iframe width="100%" height="300" src="https://www.youtube.com/embed/6v2L2UGZJAM" frameborder="0" allowfullscreen></iframe></div>
+          <div class="video__aside col-lg-6">
+            <p><strong>Kyiv Data Spring</strong> - одно из крупнейших мероприятий про данные в Восточной Европе. Этот фестиваль  – главная площадка, где встречаются и делятся знаниями люди, заинтересованные в развитии больших данных и машинного обучения. <br><br> Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.</p>
+          </div>
+        </div>
+      </section>
+      <section class="timer">
+        <div class="timer__title">
+          <h1>Начало через</h1>
+        </div>
+        <div class="timer__animation">
+          <div class="container">
+            <div class="seconds__bar"><span class="sec-counter"></span>
+              <div class="col-lg-12 centerd">
+                <ul class="bar__list">
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                  <li class="_hight"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="_hight"></li>
+                </ul>
+              </div><span class="seconds__text">Секунд</span>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="timer__wrapper"></div>
+        </div>
+      </section>
+      <section class="place">
+        <div class="container">
+          <h1 class="place__title">Где?</h1><i class="place__icon icon-map"></i><span class="place__text">Киев, Вднх 11 марта 11:00</span>
+        </div>
+      </section>
+      <section class="start">
+        <div class="container"><a class="btn btn__start_centered">Старт</a></div>
+      </section>
+      <section class="description">
+        <div class="container">
+          <div class="row">
+            <div class="description__card col-lg-4">
+              <div class="card__wrapper">
+                <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/booms.svg">
+                <h2 class="car__name">Новые Знания</h2>
+                <p class="card_text">Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.</p>
+              </div>
+            </div>
+            <div class="description__card col-lg-4">
+              <div class="card__wrapper">
+                <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/lecture.svg">
+                <h2 class="car__name">Кейсы</h2>
+                <p class="card_text">Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.</p>
+              </div>
+            </div>
+            <div class="description__card col-lg-4">
+              <div class="card__wrapper">
+                <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/discuss.svg">
+                <h2 class="car__name">Нейтворкинг</h2>
+                <p class="card_text">Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="speekers">
+        <div class="container">
+          <div class="speekers__card col-lg-3">
+            <div class="card__wrapper">
+              <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/speeker-1.jpg">
+              <h3 class="car__name">Константинопольский Николай</h3>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+          <div class="speekers__card col-lg-3">
+            <div class="card__wrapper">
+              <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/speeker-2.jpg">
+              <h3 class="car__name">Константинопольский Николай</h3>
+              <p class="card_text">WebPromoExperts</p>
+            </div>
+          </div>
+          <div class="speekers__card col-lg-3">
+            <div class="card__wrapper">
+              <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/speeker-3.jpg">
+              <h3 class="car__name">Константинопольский Николай</h3>
+              <p class="card_text">Coral Travel Ukraine</p>
+            </div>
+          </div>
+          <div class="speekers__card col-lg-3">
+            <div class="card__wrapper">
+              <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div><img class="card__img" src="images/speeker-4.jpg">
+              <h3 class="car__name">Константинопольский Николай</h3>
+              <p class="card_text">Яндекс Украина</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="another-speekers">
+        <div class="container">
+          <div class="another-speekers__card col-lg-2">
+            <div class="card__wrapper"><img class="card__img" src="images/speeker-5.jpg">
+              <h4 class="car__name">Новые Константинопольский Николай</h4>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+          <div class="another-speekers__card col-lg-2">
+            <div class="card__wrapper"><img class="card__img" src="images/speeker-5.jpg">
+              <h4 class="car__name">Новые Константинопольский Николай</h4>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+          <div class="another-speekers__card col-lg-2">
+            <div class="card__wrapper"><img class="card__img" src="images/speeker-5.jpg">
+              <h4 class="car__name">Новые Константинопольский Николай</h4>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+          <div class="another-speekers__card col-lg-2">
+            <div class="card__wrapper"><img class="card__img" src="images/speeker-5.jpg">
+              <h4 class="car__name">Новые Константинопольский Николай</h4>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+          <div class="another-speekers__card col-lg-2">
+            <div class="card__wrapper"><img class="card__img" src="images/speeker-5.jpg">
+              <h4 class="car__name">Новые Константинопольский Николай</h4>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+          <div class="another-speekers__card col-lg-2">
+            <div class="card__wrapper"><img class="card__img" src="images/speeker-5.jpg">
+              <h4 class="car__name">Новые Константинопольский Николай</h4>
+              <p class="card_text">Inweb</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <div class="row">
+            <h1 class="price__title">Цена</h1>
+            <div class="price__wrapper">
+              <div class="price__item"><span class="price__text">Актуальная цена</span><span class="price__number">2700</span><span class="price__value">грн</span>
+                <submit class="btn_buy"></submit>
+              </div>
+              <div class="price__item"><span class="price__text">цена через  32 дня </span><span class="price__number">3200</span><span class="price__value">грн</span>
+                <submit class="btn_buy"></submit>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="container">
+          <div class="row"><span class="offer__title">Хотите узнать, как большие данные и машинное обучение уже приносят пользу бизнесу?</span><span class="offer__subtitle">Мы собрали 10 самых интересных кейсов об этом.</span><a class="btn btn__btn-start_centered">Узнать</a></div>
+        </div>
+      </section>
+      <section class="stage">
+        <div class="container">
+          <div class="b-stage__wrapper">
+            <div class="b-stage__description_orange">
+              <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div>
+              <h2 class="b_stage__title">Business stage</h2>
+              <p class="b_stage__text">Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе.</p>
+            </div>
+            <div class="b-stage__timetable">
+              <ul class="timetable__time-list">
+                <li><span>9:00</span></li>
+                <li><span>9:00</span></li>
+                <li><span>9:00</span></li>
+              </ul>
+              <ul class="timetable__reporte-list">
+                <li><span class="reporter">Руслан Савчишин, MagneticOne Group</span><span class="advice">Value Based Pricing: как определить цену на свой SaaS продукт</span></li>
+                <li><span class="reporter">Руслан Савчишин, MagneticOne Group</span></li>
+                <li><span class="reporter">Руслан Савчишин, MagneticOne Group</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-lg-push-5"></div>
+          <div class="b-stage__wrapper_blue">
+            <div class="b-stage__description">
+              <div class="card__decoration"><i class="tri-left"></i><i class="tri-top"></i><i class="tri-right"></i></div>
+              <h2 class="b_stage__title">Business stage</h2>
+              <p class="b_stage__text">Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе.</p>
+            </div>
+            <div class="b-stage__timetable">
+              <ul class="timetable__time-list">
+                <li><span>9:00</span></li>
+                <li><span>9:00</span></li>
+                <li><span>9:00</span></li>
+              </ul>
+              <ul class="timetable__reporte-list">
+                <li><span class="reporter">Руслан Савчишин, MagneticOne Group</span><span class="advice">Value Based Pricing: как определить цену на свой SaaS продукт</span></li>
+                <li><span class="reporter">Руслан Савчишин, MagneticOne Group</span></li>
+                <li><span class="reporter">Руслан Савчишин, MagneticOne Group</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <div class="row">
+            <h1 class="price__title">Цена</h1>
+            <div class="price__wrapper">
+              <div class="price__item"><span class="price__text">Актуальная цена</span><span class="price__number">2700</span><span class="price__value">грн</span>
+                <submit class="btn_buy"></submit>
+              </div>
+              <div class="price__item"><span class="price__text">цена через  32 дня </span><span class="price__number">3200</span><span class="price__value">грн</span>
+                <submit class="btn_buy"></submit>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors">
+        <div class="container">
+          <h1 class="sponsors__title">Спонсоры</h1>
+          <ul class="sponsors__list">
+            <li class="col-lg-3"><img src="images/partners-1.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-2.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-3.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-1.jpg"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h1 class="partners__title">Партнеры</h1>
+          <ul class="partners__list clearfix">
+            <li class="col-lg-3"><img src="images/partners-1.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-2.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-3.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-1.jpg"></li>
+          </ul>
+          <ul class="partners__list clearfix">
+            <li class="col-lg-3"><img src="images/partners-1.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-2.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-3.jpg"></li>
+            <li class="col-lg-3"><img src="images/partners-1.jpg"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__text col-lg-3"><span>Быть в кусре всего что здесь происходит </span></div>
+          <div class="subscribe__form col-lg-8 col-lg-offset-1">
+            <form class="form">
+              <input class="form__search">
+              <button class="form__btn_submit" type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="map"></section>
+      <footer>
+        <footer>
+          <div class="container">
+            <div class="footer__organisation"><span class="organisation__text_block">Организатор конференции:</span><img class="organisation__img" src="images/triangular-logo.png"><span class="organisation__text">Data-Driven Digital Agency Septa.</span></div>
+            <div class="footer__aside">
+              <div class="footer__socials">
+                <ul class="socials__list">
+                  <li class="socials__item"><i class="socials_icon icon-vk"></i></li>
+                  <li class="socials__item"><i class="socials_icon icon-facebook"></i></li>
+                  <li class="socials__item"><i class="socials_icon icon-behance"></i></li>
+                </ul>
+              </div>
+              <div class="copyright"><span>Copyright &copy; 2016. All rights reserved.</span></div>
+            </div>
+          </div>
+          <nav>
+            <div class="h-nav">
+              <ul class="h-nav__menu">
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)">О конференции</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)">Спикеры</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)">Расписание</a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </footer>
+    </div>
+  </body>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</html>

@@ -1,0 +1,421 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		title KSD
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='styles/style.css')
+	body
+		//if lt IE 8
+			p.chromeframe.
+			You are using an <strong>outdated</strong> browser.
+			Please <a href="http://browsehappy.com/">upgrade your browser</a>
+			to improve your experience.
+		.wrapper
+			.header-wrapper
+				header.header.clearfix
+					.container
+						.header__logo
+							a.logo__link(href="javascript:void")
+								img.logo__img(src="images/logo.png" alt="logo")
+						nav.header__nav
+							ul.h-menu
+								li.h-menu__item
+									a.menu__link( href="javascript:void(0)") О конференции
+									svg.menu-img.canvasAnim(height="100" width="100")
+										polygon(points="5,5 95,25 50,90" style="fill:none;stroke:white;stroke-width:4")
+								li.h-menu__item
+									a.menu__link(href="javascript:void(0)") Спикеры
+									svg.menu-img.canvasAnim(height="100" width="100")
+										polygon(points="5,5 95,25 50,90" style="fill:none;stroke:white;stroke-width:4")
+								li.h-menu__item
+									a.menu__link( href="javascript:void(0)") Расписание
+									svg.menu-img.canvasAnim(height="100" width="100")
+										polygon(points="5,5 95,25 50,90" style="fill:none;stroke:white;stroke-width:4")
+				.header__hero
+					.container
+						h1.hero__title Одно из крупнейших <br> мероприятий про данные <br> в Восточной Европе
+						p.hero__sub-title Этот фестиваль – главная площадка, где встречаются и <br> делятся знаниями люди, заинтересованные в развитии <br> больших данных и машинного обучения.
+				.header__btn
+					.container
+						button(action="#!").btn.btn__btn-start_centered 
+							span.btn__text Старт
+			.header__organisation
+				.container
+					.organisation__content
+						span.organisation__text_bold Организатор конференции:
+						img.organisation__img(src="images/triangular-logo.png")
+						span.organisation__text Data-Driven Digital Agency Septa.
+			section.short-description
+				.container
+					.row
+						.short-description__one-third.col-lg-3
+							.one-third__header
+								.img__wrapper
+									img.one-third__img(src="images/speeker.png")
+								svg.desc-svg(height="135" width="135")
+										polygon(points="5,5 130,35 40,130" style="fill:none;stroke:#f5f5f5;stroke-width:4")
+							h3.one-third__text 2 топ спикера<br> из Европы и США
+						.short-description__one-third.col-lg-4.col-lg-offset-1
+							.one-third__header
+								.img__wrapper
+									img.one-third__img(src="images/double-button.png")
+								svg.desc-svg(height="135" width="135")
+										polygon(points="5,5 130,35 40,130" style="fill:none;stroke:#f5f5f5;stroke-width:4")
+							h3.one-third__text 2 потока <br> для Бизнеса и разработчиков 
+						.short-description__one-third.col-lg-3.col-lg-offset-1
+							.one-third__header
+								.img__wrapper
+									img.one-third__img(src="images/orator.png")
+								svg.desc-svg(height="135" width="135")
+										polygon(points="5,5 130,35 40,130" style="fill:none;stroke:#f5f5f5;stroke-width:4")
+							h3.one-third__text Более 15 докладчиков
+			section.video
+				.container
+					.video__wrapper.col-lg-6
+						<iframe width="100%" height="300" src="https://www.youtube.com/embed/6v2L2UGZJAM" frameborder="0" allowfullscreen></iframe>
+					.video__aside.col-lg-6
+						p <strong>Kyiv Data Spring</strong> - одно из крупнейших мероприятий про данные в Восточной Европе. Этот фестиваль  – главная площадка, где встречаются и делятся знаниями люди, заинтересованные в развитии больших данных и машинного обучения. <br><br> Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.
+			section.timer
+				.timer__title
+					h1 Начало через
+				.timer__animation
+					.container
+						.seconds__bar
+							span.sec-counter
+							.col-lg-12.centerd
+								ul.bar__list
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+									li._hight
+									li
+									li
+									li
+									li._hight
+							span.seconds__text Секунд
+				.container
+					.timer__wrapper
+			section.place
+				.container
+					h1.place__title Где?
+					i.place__icon.icon-map
+					span.place__text Киев, Вднх 11 марта 11:00
+			section.start
+				.container
+					a.btn.btn__start_centered Старт
+			section.description
+				.container
+					.row
+						.description__card.col-lg-4
+							.card__wrapper
+								.card__decoration
+									i.tri-left
+									i.tri-top
+									i.tri-right
+								img.card__img(src="images/booms.svg")
+								h2.car__name Новые Знания
+								p.card_text Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.
+						.description__card.col-lg-4
+							.card__wrapper
+								.card__decoration
+									i.tri-left
+									i.tri-top
+									i.tri-right
+								img.card__img(src="images/lecture.svg")
+								h2.car__name Кейсы
+								p.card_text Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.
+						.description__card.col-lg-4
+							.card__wrapper
+								.card__decoration
+									i.tri-left
+									i.tri-top
+									i.tri-right
+								img.card__img(src="images/discuss.svg")
+								h2.car__name Нейтворкинг
+								p.card_text Менеджеры, разработчики, маркетологи, владельцы бизнесов, инвесторы и ученые – фестиваль объединит более 400 людей, которые хотят быть на острие инноваций и стремятся раскрыть потенциал технологий больших данных.
+			section.speekers
+				.container
+					.speekers__card.col-lg-3
+						.card__wrapper
+							.card__decoration
+								i.tri-left
+								i.tri-top
+								i.tri-right
+							img.card__img(src="images/speeker-1.jpg")
+							h3.car__name Константинопольский Николай
+							p.card_text Inweb
+					.speekers__card.col-lg-3
+						.card__wrapper
+							.card__decoration
+								i.tri-left
+								i.tri-top
+								i.tri-right
+							img.card__img(src="images/speeker-2.jpg")
+							h3.car__name Константинопольский Николай
+							p.card_text WebPromoExperts
+					.speekers__card.col-lg-3
+						.card__wrapper
+							.card__decoration
+								i.tri-left
+								i.tri-top
+								i.tri-right
+							img.card__img(src="images/speeker-3.jpg")
+							h3.car__name Константинопольский Николай
+							p.card_text Coral Travel Ukraine
+					.speekers__card.col-lg-3
+						.card__wrapper
+							.card__decoration
+								i.tri-left
+								i.tri-top
+								i.tri-right
+							img.card__img(src="images/speeker-4.jpg")
+							h3.car__name Константинопольский Николай
+							p.card_text Яндекс Украина
+			section.another-speekers
+				.container
+					.another-speekers__card.col-lg-2
+						.card__wrapper
+							img.card__img(src="images/speeker-5.jpg")
+							h4.car__name Новые Константинопольский Николай
+							p.card_text Inweb
+					.another-speekers__card.col-lg-2
+						.card__wrapper
+							img.card__img(src="images/speeker-5.jpg")
+							h4.car__name Новые Константинопольский Николай
+							p.card_text Inweb
+					.another-speekers__card.col-lg-2
+						.card__wrapper
+							img.card__img(src="images/speeker-5.jpg")
+							h4.car__name Новые Константинопольский Николай
+							p.card_text Inweb
+					.another-speekers__card.col-lg-2
+						.card__wrapper
+							img.card__img(src="images/speeker-5.jpg")
+							h4.car__name Новые Константинопольский Николай
+							p.card_text Inweb
+					.another-speekers__card.col-lg-2
+						.card__wrapper
+							img.card__img(src="images/speeker-5.jpg")
+							h4.car__name Новые Константинопольский Николай
+							p.card_text Inweb
+					.another-speekers__card.col-lg-2
+						.card__wrapper
+							img.card__img(src="images/speeker-5.jpg")
+							h4.car__name Новые Константинопольский Николай
+							p.card_text Inweb
+			section.price
+				.container
+					.row
+						h1.price__title Цена
+						.price__wrapper
+							.price__item
+								span.price__text Актуальная цена
+								span.price__number 2700
+								span.price__value грн
+								submit.btn_buy
+							.price__item
+								span.price__text цена через  32 дня 
+								span.price__number 3200
+								span.price__value грн
+								submit.btn_buy
+			section.offer
+				.container
+					.row
+						span.offer__title Хотите узнать, как большие данные и машинное обучение уже приносят пользу бизнесу?
+						span.offer__subtitle Мы собрали 10 самых интересных кейсов об этом.
+						a.btn.btn__btn-start_centered Узнать
+			section.stage
+				.container
+					.b-stage__wrapper
+						.b-stage__description_orange
+							.card__decoration
+									i.tri-left
+									i.tri-top
+									i.tri-right
+							h2.b_stage__title Business stage
+							p.b_stage__text Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе.
+						.b-stage__timetable
+							ul.timetable__time-list
+								li
+									span 9:00
+								li
+									span 9:00
+								li
+									span 9:00
+							ul.timetable__reporte-list
+								li
+									span.reporter Руслан Савчишин, MagneticOne Group
+									span.advice Value Based Pricing: как определить цену на свой SaaS продукт
+								li
+									span.reporter Руслан Савчишин, MagneticOne Group
+								li
+									span.reporter Руслан Савчишин, MagneticOne Group
+					.col-lg-2.col-lg-push-5
+					.b-stage__wrapper_blue
+						.b-stage__description
+							.card__decoration
+									i.tri-left
+									i.tri-top
+									i.tri-right
+							h2.b_stage__title Business stage
+							p.b_stage__text Поток для менеджеров, владельцев бизнеса и маркетологов, где делятся идеями и кейсами, как применять большие данные и машинное обучение в бизнесе.
+						.b-stage__timetable
+							ul.timetable__time-list
+								li
+									span 9:00
+								li
+									span 9:00
+								li
+									span 9:00
+							ul.timetable__reporte-list
+								li
+									span.reporter Руслан Савчишин, MagneticOne Group
+									span.advice Value Based Pricing: как определить цену на свой SaaS продукт
+								li
+									span.reporter Руслан Савчишин, MagneticOne Group
+								li
+									span.reporter Руслан Савчишин, MagneticOne Group
+			section.price
+				.container
+					.row
+						h1.price__title Цена
+						.price__wrapper
+							.price__item
+								span.price__text Актуальная цена
+								span.price__number 2700
+								span.price__value грн
+								submit.btn_buy
+							.price__item
+								span.price__text цена через  32 дня 
+								span.price__number 3200
+								span.price__value грн
+								submit.btn_buy
+			section.sponsors
+				.container
+					h1.sponsors__title Спонсоры
+					ul.sponsors__list
+						li.col-lg-3
+							img(src="images/partners-1.jpg")
+						li.col-lg-3
+							img(src="images/partners-2.jpg")
+						li.col-lg-3
+							img(src="images/partners-3.jpg")
+						li.col-lg-3
+							img(src="images/partners-1.jpg")
+			section.partners
+				.container
+					h1.partners__title Партнеры
+					ul.partners__list.clearfix
+						li.col-lg-3
+							img(src="images/partners-1.jpg")
+						li.col-lg-3
+							img(src="images/partners-2.jpg")
+						li.col-lg-3
+							img(src="images/partners-3.jpg")
+						li.col-lg-3
+							img(src="images/partners-1.jpg")
+					ul.partners__list.clearfix
+						li.col-lg-3
+							img(src="images/partners-1.jpg")
+						li.col-lg-3
+							img(src="images/partners-2.jpg")
+						li.col-lg-3
+							img(src="images/partners-3.jpg")
+						li.col-lg-3
+							img(src="images/partners-1.jpg")
+			section.subscribe
+				.container
+					.subscribe__text.col-lg-3
+						span Быть в кусре всего что здесь происходит 
+					.subscribe__form.col-lg-8.col-lg-offset-1
+						form.form
+							input.form__search
+							button(type="submit").form__btn_submit
+			section.map
+			footer
+				footer
+					.container
+						.footer__organisation
+							span.organisation__text_block Организатор конференции:
+							img.organisation__img(src="images/triangular-logo.png")
+							span.organisation__text Data-Driven Digital Agency Septa.
+						.footer__aside
+							.footer__socials
+								ul.socials__list
+									li.socials__item
+										i.socials_icon.icon-vk
+									li.socials__item
+										i.socials_icon.icon-facebook
+									li.socials__item
+										i.socials_icon.icon-behance
+							.copyright
+								span Copyright &copy; 2016. All rights reserved.
+					nav
+							.h-nav
+								ul.h-nav__menu
+									li.menu__item
+										a.menu__link(href="javascript:void(0)") О конференции
+									li.menu__item
+										a.menu__link(href="javascript:void(0)") Спикеры
+									li.menu__item
+										a.menu__link(href="javascript:void(0)") Расписание
+	script(src="scripts/jquery.min.js")
+	//- script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+	script(src='scripts/main.js')
+
+

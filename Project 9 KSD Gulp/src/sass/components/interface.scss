@@ -1,0 +1,62 @@
+.btn {
+	box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.2);
+	border: none;
+}
+
+.btn__btn-start_centered {
+	width: 300px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	position: relative;
+	background-color: #ffad00;
+	background-image: url('../images/noise.png');
+	font-size: 20px;
+	transform: skewX(-45deg);
+	transition: transform 0.2s;
+	    &:after {
+    	content: " ";
+    	display: inline-block;
+    	width: 292px;
+    	height: 52px;
+    	background-color: $orange; 
+		background-image: url('../images/noise.png');
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		z-index: -1;
+    }
+}
+.btn__btn-start_centered:hover {transform: skewX(0);}
+.btn__btn-start_centered:hover .btn__text {transform: skewX(0);}
+.btn__btn-start_centered:active:after {background-color: #ffa234;}
+
+.btn__text {
+	transform: skewX(45deg);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	display: block;
+    margin: -14px auto;
+    font-size: 1.250em;
+    color: $white;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.desc-svg {
+	position: absolute;
+	top: -40px;
+	bottom: 0;
+	left: -20px;
+	right: 0;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.centerd {
+	text-align: center;
+}
