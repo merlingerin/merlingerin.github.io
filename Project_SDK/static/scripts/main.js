@@ -129,7 +129,7 @@ $(function(){
 //////////////GOOGLE MAPS//////////////////////
 
 var myCenter = new google.maps.LatLng(50.4678891, 30.518347);
-	image = '../images/marker.png';
+	image = 'images/marker.png';
 
 function initialize() {
 var mapProp = {
