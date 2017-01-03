@@ -1,11 +1,251 @@
-@media only screen and (max-width: 1919px) {
-	body {
-		font-size: 14px;
+// @media only screen and (max-width: 1919px) {
+// 	body {
+// 		font-size: 14px;
+// 	}
+// }
+
+// @media only screen and (max-width: 1360px) {
+// 	body {
+// 		font-size: 12px;
+// 	}
+// }
+///////MEDIA  1200px/////////////
+@media only screen and (max-width: 1200px) {
+	.timer__wrapper  {
+		span {font-size: 5em;}
 	}
+}
+///////MEDIA  992px/////////////
+@media only screen and (max-width: 992px) {
+	.menu-trigger {
+		display: inline-block; 
+		float: right;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.header__nav{
+		background-color: $blue;
+		display: none;
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: 0;
+		z-index: 1;
+	}
+	
+	.active-menu { display: block; }
+
+	.h-menu { text-align: center; }
+
+	.h-menu__item {
+		border-bottom: 1px solid $white;
+		display: block;
+		margin-top: 20px;
+		text-transform: uppercase;
+		font-weight: 700;
+		.menu__link {font-size: 1.5625rem;}
+		&:first-child { margin-top: 0;}
+		&:hover .menu-img{
+			transform: scale(0.5);
+			display: block;
+		}
+	}
+	.timer__wrapper  {
+		span {
+			font-size: 4em;
+			&:before{right: -60px;}
+		}
+	}
+}
+///////MEDIA TABLETS 768px/////////////
+@media only screen and (max-width: 768px) {
+	.header-wrapper{
+		background:  url('../images/blue-string.png'), url('../images/map-tablet.jpg'), #f3f3f3;
+		background-position: -400px center, center center;
+		background-size: 200% 100%, 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.header__hero { margin-bottom: 75px; }
+	.hero__title {font-size: 2.5em; line-height: 1.3em;}
+	.hero__sub-title{font-size: 1.250em; line-height: 1.5em;}
+	.header__btn{margin-left: 13%;}
+	.short-description__one-third { float: left; display: inline-block; width: 37.5%;}
+	.last { width: 25%; }
+	.video__wrapper{width: 80%; margin: 0 auto;}
+	.timer__wrapper{
+		span { 
+			font-size: 3.75em; 
+			}
+		.minutes:after {left: 0;}
+	}
+	.card__decoration{display: inline-block; width: 30%;}
+	.card__wrapper{
+		float: right;
+		width: 50%;
+		display: inline-block;
+	}
+	.card__name{margin-top: 0;}
+	.tri-left { left: -30px; top: 0;}
+
+	.tri-top { right: 0; top: 0; }
+
+	.tri-right { top: 150px; left: 150px; }
+	.btn-straight-psv {transform: scale(0.8);}
+	.btn-straight{transform: scale(0.8);}
+	.bg-tril { left: -40px; max-width: 150%;}
+	.description {
+		.card__name { 
+			text-align: left;
+			&:after {right: 100%;}
+			&:before{right: 100%;}		
+		}
+	}	
+	.offer {background-position: center center;}
+	.timetable__report-last{}
+	.sponsors__list {
+		text-align: center;
+		.sponsors__item {
+			width: 49%;
+			margin-top: 20px;
+			&:after {
+				left: 0;
+			}
+			&:nth-child(3):after {
+				display: none;
+			}
+		}
+	}
+	.partners__list {
+		text-align: center;
+		.partners__item {
+			width: 49%;
+			margin-top: 20px;
+			&:after {
+				left: 0;
+			}
+			&:nth-child(3):after {
+				display: none;
+			}
+		}
+	}
+	.btn-submit{
+		width: 200px;
+		&:after {
+			width: 196px;
+		}
+	}
+	.subscribe__text{font-size: 1.250em}
+	.form__email{width: 270px;}	
 }
 
-@media only screen and (max-width: 1360px) {
-	body {
-		font-size: 12px;
+///////////////////MEDIA MOBILE 480px////////////////////////
+@media only screen and (max-width: 480px) {
+	p { font-size: 0.875rem; }
+	.header-wrapper {
+		background-position: -300px center, center center;
+	    background-size: 300% 100%, 100% 100%;
+		background-repeat: no-repeat;
+		.header__hero {margin-top: 60px;}
+		.hero__title  {font-size: 1.375em;}
+		.hero__sub-title {font-size: 0.875em;}
+		.header__btn {margin-left: 0;}
 	}
+	.header__organisation {height: auto; margin-top: 0;}
+	.organisation__content { margin-left: 0;}
+	.organisation__img { margin: 5px 20px; }
+	.short-description__one-third{width: 100%;}
+	.desc-svg { top: -20px; left: 0;}
+	.one-third__text { 
+		font-size: 1em;
+		&:before {
+			content: " ";
+			width: 16px;
+			display: block;
+			height: 5px;
+			background-color: $blue;
+		}
+	}
+	.img__wrapper { 
+		&:after { background-color: $white; width: 0; height: 0;}
+	}
+	.video {     
+		background-image: url(../images/video-blue-bg.png), url(../images/video-white-bg.png);
+	    background-repeat: no-repeat;
+	    background-position: -1150px center, 150px center;
+	    background-size: cover, cover; 
+	}
+	.video__wrapper { width: 100%;}
+	h1 { font-size: 1.375em; }
+	.timer__wrapper { 
+		span { 
+			font-size: 2em; 
+			&:after { font-size: 0.750rem; left: 0;}
+			&:before { height: 52px; right: -30px; }
+		} 
+	}
+	.place { margin-bottom: 30px; }
+	.description {
+		.description__card { padding: 35px 14px 40px 14px; }
+		.card__decoration { width: 60%; margin-bottom: 30px;}
+		.card__wrapper { 
+			width: 100%;
+			.card__name {
+				text-align: center; 
+				font-size: 1.250em;
+				&:before { right: 0; }
+				&:after { right: 0; }
+			}
+		}
+	}
+	.speekers { 
+		padding-top: 90px; 
+		.card__decoration { display: none;}
+		.card__name { display: none;}
+		.speekers__card	{ padding: 5px;}
+		.card_text { display: none; }
+	}
+	.another-speekers { display: none; }
+	.price { padding-top: 90px; }
+	.price {
+		.price__item { padding: 30px 0 35px 0;}
+		.price__text { font-size: 0.875em; }
+		.price__number, .price__value { font-size: 1.8rem; }
+		.btn.btn-straight { 
+			width: 230px;
+			height: 60px;
+			margin: auto;
+			left: 0;
+			right: -180px;
+			bottom: -10px;		
+			transform: scale(1);
+			z-index: 1;
+			&:after  { 
+				width: 230px; 
+				height: 60px;
+				left: 0;
+				top: 0;
+
+			}
+		}
+		.btn-straight-psv { display: none; }
+	}
+	.offer { 
+		background-image: url(../images/blue-string2.png), url(../images/city.jpg);
+	    background-position: -245px center, center center;
+	    background-repeat: no-repeat, no-repeat;
+	    background-size: 200% 100%, cover;
+	    padding-top: 85px;
+	    margin-top: 125px;
+	}
+	.offer__question { font-size: 1.275em; }
+	.offer__subquestion { font-size: 1em; }
+	.stage { 
+		padding-top: 85px; 
+		&:before { display: none; }
+	}
+	.b-stage__wrapper { margin-top: 50px; }
+	.b-stage__description_blue, .b-stage__description_orange { padding: 20px 10px 40px 10px }
+	.reporter, .oclock { font-weight: 700; }
 }
+ 	
+    
