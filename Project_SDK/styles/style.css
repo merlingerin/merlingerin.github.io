@@ -449,7 +449,7 @@ input[type="email"].form__email:-moz-placeholder {
   cursor: pointer;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span, #nav-icon2 span {
   display: block;
   position: absolute;
   height: 6px;
@@ -462,7 +462,7 @@ input[type="email"].form__email:-moz-placeholder {
   transition: .25s ease-in-out;
 }
 
-/* Icon 3 */
+/* Nav - Icon 3 fixed nav */
 #nav-icon3 span:nth-child(1) {
   top: 0px;
 }
@@ -490,6 +490,39 @@ input[type="email"].form__email:-moz-placeholder {
 }
 
 #nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* Nav - Icon 2 header-nav */
+#nav-icon2 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon2 span:nth-child(2), #nav-icon2 span:nth-child(3) {
+  top: 12px;
+}
+
+#nav-icon2 span:nth-child(4) {
+  top: 24px;
+}
+
+#nav-icon2.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon2.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
@@ -744,6 +777,8 @@ input[type="email"].form__email:-moz-placeholder {
 #videoFrame {
   box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
+  height: 300px;
+  width: 100%;
 }
 
 .video__aside {
@@ -1145,6 +1180,7 @@ input[type="email"].form__email:-moz-placeholder {
 }
 
 .description__card:hover .bg-tril {
+  display: block;
   animation-name: decorAnim;
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
@@ -1181,7 +1217,7 @@ input[type="email"].form__email:-moz-placeholder {
 }
 
 .bg-tril {
-  display: block;
+  display: none;
   position: absolute;
   top: -65px;
   left: 0;
@@ -1533,7 +1569,6 @@ input[type="email"].form__email:-moz-placeholder {
 .sponsors__list .sponsors__item {
   position: relative;
   display: inline-block;
-  width: 24%;
 }
 .sponsors__list .sponsors__item:first-child:after {
   display: none;
@@ -1545,7 +1580,7 @@ input[type="email"].form__email:-moz-placeholder {
   position: absolute;
   background-color: #e9e9e9;
   top: 0;
-  left: -40px;
+  left: -3.5%;
   display: inline-block;
   transform: rotate(45deg);
 }
@@ -1560,7 +1595,6 @@ input[type="email"].form__email:-moz-placeholder {
 .partners__list li {
   position: relative;
   display: inline-block;
-  width: 24%;
 }
 .partners__list li:first-child:after {
   display: none;
@@ -1572,7 +1606,7 @@ input[type="email"].form__email:-moz-placeholder {
   position: absolute;
   background-color: #e9e9e9;
   top: 0;
-  left: -40px;
+  left: -3.5%;
   display: inline-block;
   transform: rotate(45deg);
 }
@@ -1737,6 +1771,61 @@ footer {
   }
   .timer__wrapper span:before {
     right: -60px;
+  }
+
+  .card__wrapper {
+    float: right;
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .card__name {
+    margin-top: 0;
+  }
+
+  .tri-left {
+    left: -30px;
+    top: 0;
+  }
+
+  .tri-top {
+    right: 0;
+    top: 0;
+  }
+
+  .tri-right {
+    top: 150px;
+    left: 150px;
+  }
+
+  .btn-straight-psv {
+    transform: scale(0.8);
+  }
+
+  .btn-straight, .btn-straight-psv {
+    transform: scale(0.8);
+  }
+
+  .bg-tril {
+    left: 40px;
+    top: -170px;
+    max-width: 100%;
+  }
+
+  .description .card__name {
+    text-align: center;
+  }
+
+  .stage {
+    padding-top: 75px;
+  }
+  .stage:before {
+    display: none;
+  }
+
+  .b-stage__wrapper {
+    margin-top: 50px;
   }
 }
 @media only screen and (max-width: 768px) {
