@@ -528,6 +528,28 @@ input[type="email"].form__email:-moz-placeholder {
   left: 50%;
 }
 
+#page-preloader {
+  background: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: 9999991;
+}
+
+#status-preloader {
+  background: url("../images/preloader/preloader.gif");
+  position: fixed;
+  width: 296px;
+  height: 296px;
+  top: 50%;
+  left: 50%;
+  margin-top: -148px;
+  margin-left: -148px;
+  z-index: 9999999;
+}
+
 /*////////HEADER///////*/
 .wrapper {
   max-width: 100%;

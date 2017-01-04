@@ -1,3 +1,9 @@
+///////////////////PRELOADER///////////////////////////
+$(window).on('load', function(){
+	$('#status-preloader').fadeOut();
+	$('#page-preloader').delay(1000).fadeOut('slow');
+});
+///////////////////END PRELOADER////////////////////////
 $(function(){
 
 	// $(document).ready(function(){
@@ -32,6 +38,7 @@ $(function(){
 
 	// });
 //////////////////// END HEADER MENU//////////////////////////
+
 /////////////////////////////SECONDS BAR/////////////////
 		var chC = function() { 
 			var times = new Date(),
@@ -48,13 +55,6 @@ $(function(){
 			    var picked = elem[i];
 				$(picked).css('background-color', '#b6b6b6');;
 				$(spanText).css('left', (i * (windowWidth/59)) - 14 + 'px');
-				// if(i > 20) {
-				// 	$(spanText).css('left', i * (windowWidth/59)*0.9 + 'px');
-				// }
-				// else {
-				// 	$(spanText).css('left', i * (windowWidth/59)*0.9 + 'px');
-				// }
-
 				if( seconds >= 10 ) {
 					if (seconds >= 52){
 						$(secView)
