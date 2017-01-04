@@ -1,7 +1,26 @@
-(function ($) {
+$(window).on('load', function(){
+	$('#status').fadeOut();
+	$('#page-preloader').delay(1000).fadeOut('slow');
+});
+$(function ($) {
     
   'use strict';
-  
+  ////AJAX MAIL//// 
+$(document).ready(function(){
+
+  $('#feedback__form').submit(function(){
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: ($this).serialize()
+    }).done(function() {
+      alert('Thank you for your submit! We will callback you soon.');
+    });
+    return false;
+  });
+
+});
+
   //FIXED MENU
   // $(document).ready(function() {
   //   var navPos, winPos, navHeight;
