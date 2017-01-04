@@ -4,7 +4,158 @@ $(window).on('load', function(){
 	$('#page-preloader').delay(1000).fadeOut('slow');
 });
 ///////////////////END PRELOADER////////////////////////
+
 $(function(){
+
+/////////////////////////////SECONDS BAR/////////////////
+	var chC = function() { 
+		var times = new Date(),
+			elem = $('.bar__list li'),
+			seconds = times.getSeconds(),
+			windowWidth = $('.bar__list').width(),
+			secView = $('.sec-counter'),
+			spanMargin = secView.css('margin-left'),
+			spanText = $('.seconds__text');
+		if($(elem[60]).attr('background-color','#b6b6b6')) {
+			$(elem).css('background-color', '#269ed8');
+		};
+	    for(var i = 0; i < seconds; i++){
+		    var picked = elem[i];
+			$(picked).css('background-color', '#b6b6b6');;
+			$(spanText).css('left', (i * (windowWidth/59)) - 14 + 'px');
+			if( seconds >= 10 ) {
+				if (seconds >= 52){
+					$(secView)
+					.text(seconds)
+					.css('left', i * (windowWidth/59) + 'px');
+				}
+				else {
+					$(secView)
+					.text(seconds)
+					.css('left', i * (windowWidth/59) + 'px');
+				}
+			}
+			else { $(secView)
+				.text(seconds)
+				.css('left', i * (windowWidth/59) + 'px');}
+	    }
+	};
+	setInterval(chC, 1000);
+//////////////////////////////////////////////////////////////
+
+
+///////////////////////////TIMER/////////////////////////////
+	$('.month').countdown('2017/10/10', function(event) {
+	  $(this).html(event.strftime(' %m'));
+	});
+	$('.days').countdown('2017/10/10', function(event) {
+	  $(this).html(event.strftime(' %d'));
+	});
+	$('.hours').countdown('2017/10/10', function(event) {
+	  $(this).html(event.strftime(' %H'));
+	});
+	$('.minutes').countdown('2017/10/10', function(event) {
+	  $(this).html(event.strftime(' %M'));
+	});
+///////////////////////////END TIMER/////////////////////////////
+
+
+//////////////////////////GOOGLE MAPS//////////////////////
+var myCenter = new google.maps.LatLng(50.4678891, 30.518347);
+	image = 'images/marker.png';
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 16,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+  icon: image
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+//////////////END GOOGLE MAPS//////////////////////
+
+/////////////MOBILE MENU///////////////////
+
+function Menu() {
+      var $trigger = $('.menu-trigger'),
+          $menu = $('.trigger-victim');
+      
+      $trigger.click(function() {
+        $('#nav-icon3').toggleClass('open');
+        $(this).next($menu).slideToggle();
+      });
+      
+      $(window).resize(function() {
+        if ($(window).width() > 992){
+          $menu.removeAttr('style');
+        }
+      });
+      
+    }
+Menu();
+
+/////////////END MOBILE MENU///////////////////
+
+
+
+/////////////FIXED MENU///////////////////
+$(document).ready(function(){
+	var x = $(".menu-fixed").offset(),
+        	menu = $(".menu-fixed");
+	$(window).scroll( function(){
+        var	winOffset = $(window).scrollTop();
+
+        if ( x.top  < winOffset) {
+        	$(menu).addClass('menu-fixed-act');
+        }
+        else 
+        	$(menu).removeClass('menu-fixed-act');
+	});
+/////////////END FIXED MENU///////////////////
+
+
+////////////////////AJAX MAIL/////////////
+	$("#btn-submit").click(function(){
+    $.ajax({
+      type: "POST",
+      url: "mail.php",
+      data: $("#feedback__form").serialize(),
+      success: function(data) {
+        console.log('success', data);
+      }
+    }); 
+  }); 
+  $(".btn-submit").click(function(){
+    var modal = $('#modal');
+        modal.show();
+  });
+  $('#modal').click(function(){
+    var modal = $('#modal');
+    if (modal.show()) {
+      	modal.hide();
+    }
+  });
+
+});
+
+
+});
+
+
 
 	// $(document).ready(function(){
 	// 	var victim = $('.menu__link');
@@ -39,58 +190,9 @@ $(function(){
 	// });
 //////////////////// END HEADER MENU//////////////////////////
 
-/////////////////////////////SECONDS BAR/////////////////
-		var chC = function() { 
-			var times = new Date(),
-				elem = $('.bar__list li'),
-				seconds = times.getSeconds(),
-				windowWidth = $('.bar__list').width(),
-				secView = $('.sec-counter'),
-				spanMargin = secView.css('margin-left'),
-				spanText = $('.seconds__text');
-			if($(elem[60]).attr('background-color','#b6b6b6')) {
-				$(elem).css('background-color', '#269ed8');
-			};
-		    for(var i = 0; i < seconds; i++){
-			    var picked = elem[i];
-				$(picked).css('background-color', '#b6b6b6');;
-				$(spanText).css('left', (i * (windowWidth/59)) - 14 + 'px');
-				if( seconds >= 10 ) {
-					if (seconds >= 52){
-						$(secView)
-						.text(seconds)
-						.css('left', i * (windowWidth/59) + 'px');
-					}
-					else {
-						$(secView)
-						.text(seconds)
-						.css('left', i * (windowWidth/59) + 'px');
-					}
-				}
-				else { $(secView)
-					.text(seconds)
-					.css('left', i * (windowWidth/59) + 'px');}
-		    }
-		};
-		setInterval(chC, 1000);
-//////////////////////////////////////////////////////////////
 
 
-///////////////////////////TIMER/////////////////////////////
-	$('.month').countdown('2017/10/10', function(event) {
-	  $(this).html(event.strftime(' %m'));
-	});
-	$('.days').countdown('2017/10/10', function(event) {
-	  $(this).html(event.strftime(' %d'));
-	});
-	$('.hours').countdown('2017/10/10', function(event) {
-	  $(this).html(event.strftime(' %H'));
-	});
-	$('.minutes').countdown('2017/10/10', function(event) {
-	  $(this).html(event.strftime(' %M'));
-	});
 
-///////////////////////////END TIMER/////////////////////////////
 /////////////DECORATION FOR CARD////////////////////////////////
 // $('#card2').on({
 // 	mouseover: function(e){
@@ -126,66 +228,3 @@ $(function(){
 // 	}
 // });
 ///////////// END DECORATION FOR CARD//////////////////
-//////////////GOOGLE MAPS//////////////////////
-
-var myCenter = new google.maps.LatLng(50.4678891, 30.518347);
-	image = 'images/marker.png';
-
-function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 16,
-  scrollwheel: false,
-  draggable: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position: myCenter,
-  icon: image
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
-//////////////END GOOGLE MAPS//////////////////////
-function Menu() {
-      var $trigger = $('.menu-trigger'),
-          $menu = $('.trigger-victim');
-      
-      $trigger.click(function() {
-        $('#nav-icon3').toggleClass('open');
-        $(this).next($menu).slideToggle();
-      });
-      
-      $(window).resize(function() {
-        if ($(window).width() > 992){
-          $menu.removeAttr('style');
-        }
-      });
-      
-    }
-Menu();
-
-$(document).ready(function(){
-	var x = $(".menu-fixed").offset(),
-        	menu = $(".menu-fixed");
-	$(window).scroll( function(){
-        var	winOffset = $(window).scrollTop();
-
-        if ( x.top  < winOffset) {
-        	$(menu).addClass('menu-fixed-act');
-        }
-        else 
-        	$(menu).removeClass('menu-fixed-act');
-	});
-        
-});
-
-
-});

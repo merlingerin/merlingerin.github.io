@@ -7,18 +7,26 @@ $(function ($) {
   'use strict';
   ////AJAX MAIL//// 
 $(document).ready(function(){
-
-  $('#feedback__form').submit(function(){
+$("#btn-submit").click(function(){
     $.ajax({
       type: "POST",
       url: "mail.php",
-      data: ($this).serialize()
-    }).done(function() {
-      alert('Thank you for your submit! We will callback you soon.');
-    });
-    return false;
+      data: $("#feedback__form").serialize(),
+      success: function(data) {
+        console.log('success', data);
+      }
+    }); 
+  }); 
+  $(".modal-btn").click(function(){
+    var modal = $('#modal');
+        modal.show();
   });
-
+  $('#modal').click(function(){
+    var modal = $('#modal');
+    if (modal.show()) {
+      modal.hide();
+    }
+  });
 });
 
   //FIXED MENU
