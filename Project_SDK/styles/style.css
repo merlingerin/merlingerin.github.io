@@ -2109,15 +2109,16 @@ footer {
   }
 
   .timer__wrapper span {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .timer__wrapper span:after {
-    font-size: 0.750rem;
+    font-size: 0.550rem;
     left: 0;
   }
   .timer__wrapper span:before {
     height: 52px;
     right: -30px;
+    top: -5px;
   }
 
   .place {
@@ -2151,6 +2152,7 @@ footer {
   .speekers .speekers__card__wrapper:hover:after {
     content: attr(data-title);
     position: absolute;
+    font-size: 0.7em;
     bottom: 0;
     left: 0;
     z-index: 999;
@@ -2334,17 +2336,5 @@ footer {
     left: 50%;
     margin-left: -29px;
     font-size: 2em;
-  }
-}
-@media only screen and (min-width: 375px) {
-  .timer__wrapper span {
-    font-size: 1.5em;
-  }
-  .timer__wrapper span:before {
-    right: -35px;
-    top: -5px;
-  }
-  .timer__wrapper span:after {
-    font-size: 0.650rem;
   }
 }
