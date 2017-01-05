@@ -15,30 +15,42 @@ $(function(){
 			windowWidth = $('.bar__list').width(),
 			secView = $('.sec-counter'),
 			spanMargin = secView.css('margin-left'),
-			spanText = $('.seconds__text');
-		if($(elem[60]).attr('background-color','#b6b6b6')) {
-			$(elem).css('background-color', '#269ed8');
-		};
-	    for(var i = 0; i < seconds; i++){
-		    var picked = elem[i];
-			$(picked).css('background-color', '#b6b6b6');;
-			$(spanText).css('left', (i * (windowWidth/59)) - 14 + 'px');
-			if( seconds >= 10 ) {
-				if (seconds >= 52){
-					$(secView)
-					.text(seconds)
-					.css('left', i * (windowWidth/59) + 'px');
+			spanText = $('.seconds__text'),
+			windowSize = $(window).width();
+
+		if (windowSize > 480 ) {
+			if($(elem[60]).attr('background-color','#b6b6b6')) {
+				$(elem).css('background-color', '#269ed8');
+			};
+		    for(var i = 0; i < seconds; i++){
+			    var picked = elem[i];
+				$(picked).css('background-color', '#b6b6b6');;
+				$(spanText).css('left', (i * (windowWidth/59)) - 14 + 'px');
+				if( seconds >= 10 ) {
+					if (seconds >= 52){
+						$(secView)
+						.text(seconds)
+						.css('left', i * (windowWidth/59) - 15 + 'px');
+					}
+					else {
+						$(secView)
+						.text(seconds)
+						.css('left', i * (windowWidth/59) + 'px');
+					}
 				}
-				else {
-					$(secView)
+				else { $(secView)
 					.text(seconds)
-					.css('left', i * (windowWidth/59) + 'px');
-				}
-			}
-			else { $(secView)
-				.text(seconds)
-				.css('left', i * (windowWidth/59) + 'px');}
-	    }
+					.css('left', i * (windowWidth/59) + 'px');}
+		    }
+
+		}//check window size
+		else if ( windowSize < 480 ) {
+			var secBar = $('.sec-counter').next();
+
+			secBar.addClass('hide');
+			$(secView).text(seconds);
+		}
+		
 	};
 	setInterval(chC, 1000);
 //////////////////////////////////////////////////////////////

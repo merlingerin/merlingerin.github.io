@@ -2028,9 +2028,14 @@ footer {
   }
 
   .header-wrapper {
-    background-position: -300px center, center center;
+    height: 100%;
+    padding-top: 5px;
+    background-position: -350px center, center center;
     background-size: 300% 100%, 100% 100%;
     background-repeat: no-repeat;
+  }
+  .header-wrapper .header__logo {
+    height: 100px;
   }
   .header-wrapper .header__hero {
     margin-top: 60px;
@@ -2048,6 +2053,10 @@ footer {
   .header__organisation {
     height: auto;
     margin-top: 0;
+    padding: 10px 0  10px 0;
+  }
+  .header__organisation span {
+    font-size: 1em;
   }
 
   .organisation__content {
@@ -2306,5 +2315,36 @@ footer {
 
   .copyright {
     text-align: center;
+  }
+
+  .seconds__bar {
+    padding: 20px 0 20px 0;
+  }
+
+  .sec-counter {
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    margin-right: 50px;
+    font-size: 2em;
+  }
+
+  .seconds__text {
+    position: relative;
+    left: 50%;
+    margin-left: -29px;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .timer__wrapper span {
+    font-size: 1.5em;
+  }
+  .timer__wrapper span:before {
+    right: -35px;
+    top: -5px;
+  }
+  .timer__wrapper span:after {
+    font-size: 0.650rem;
   }
 }
