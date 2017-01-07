@@ -25,7 +25,6 @@
     <div id="page-preloader">
         <div id="status"></div>
     </div>
-    <div id="modal"><span>Спасибо за заказ, на вашу почту отправлено письмо для подтверждения.</span></div>
     <header class="header">
         <div class="container">
             <div class="row nav_fixed">
@@ -230,7 +229,7 @@
                     <form class="download__subscribe col-md-6 col-xs-12 clearfix" action="!#">
                         <h5 class="subscribe__promis wow fadeInUp">We promise, your mail never will be spam.</h5>
                         <input type="text" class="subscribe__input wow fadeInUp" placeholder="Enter Email Address">
-                        <button class="subscribe__button button_submit_dark modal-btn wow fadeInUp">Submit</button>
+                        <button class="subscribe__button button_submit_dark wow fadeInUp" action="#!">Submit</button>
                     </form>
 
                 <div class="row">
@@ -248,10 +247,10 @@
                             <div class="support__feedback col-md-4 clearfix wow zoomIn">
                                 <form action="" id="feedback__form"></form>
                                     <input type="text" name="name" class="feedback__input-name" placeholder="FullName" required>
-                                    <input type="email" name="mail" class="feedback__input-email" placeholder="Email" required>
+                                    <input type="text" name="mail" class="feedback__input-email" placeholder="Email" required>
                                     <input type="text" name="phone" class="feedback__input-phone" placeholder="Phone" required>
                                     <textarea type="textarea" name="text" class="feedback__message" placeholder="Message" required></textarea>
-                                    <button id="btn-submit" class="feedback__button button_submit modal-btn wow fadeInUp">Submit</button>
+                                    <button class="feedback__button button_submit wow fadeInUp">Submit</button>
                             </div>
                             <div class="support__contacts col-md-2 col-xs-12 col-md-offset-1">
                                 <div class="contacts__tel block__text_iconed col-md-12 col-xs-4 wow fadeInUp">

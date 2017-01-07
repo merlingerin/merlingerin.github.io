@@ -21,32 +21,7 @@
   z-index: 99999;
 }
 ////END PRELOADER/////
-//////MODAL///////
-#modal {
-	position: fixed;
-	display: none;
-	width: 50%;
-	height: 50%;
-	background-color: rgba(0,0,0, .8);
-	top: 50%;
-	left: 50%;
-	margin-top: -25%;
-	margin-left: -25%;
-	color: white;
-	text-align: center;
-	z-index: 99990;
-	border: 3px solid rgba(0,0,0, 0.5);
-	border-radius: 30px;
-	span {
-		position: relative;
-	  	top: 50%;
-		margin-top: -40px;
-		display: block;
-		font-size: 2em;
 
-  }
-}
-////END MODAL////
 .header {
 	@include img-bg('main-bg.png');
 	background-color: #000000;
