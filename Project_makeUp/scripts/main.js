@@ -14,7 +14,6 @@ $(function(){
     });
 });
 $(window).on('load', function(){
-	$('#status-preloader').fadeOut();
 	$('#page-preloader').delay(1000).fadeOut('slow');
 });
 $(document).ready(function(){
@@ -157,8 +156,14 @@ $(document).ready(function(){
         var modal = $('.modal');    
             
         console.log(modal);
-        modal.show().toggleClass('wow').toggleClass('zoomIn');
+        modal.stop().slideDown();
 
+     });
+     $('.modal').click(function(){
+        var that = $(this);    
+            
+        that.stop().slideUp();
+        
      });
      
 });
