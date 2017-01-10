@@ -366,6 +366,16 @@ input[type^=submit] {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .wow {
+    /*CSS transitions*/
+    transition-property: none !important;
+    /*CSS transforms*/
+    transform: none !important;
+    /*CSS animations*/
+    animation: none !important;
+  }
+}
 #page-preloader {
   background: #fff;
   background-position: center center;
@@ -393,7 +403,8 @@ input[type^=submit] {
   background: url("../images/girl-1.png") left top no-repeat, url("../images/main-bg.jpg") center top no-repeat;
   background-color: #280c45;
   background-size: contain, cover;
-  padding-bottom: 3.3333333%;
+  padding-bottom: 6.3333333%;
+  min-height: 100%;
 }
 #header .header-top {
   padding-top: 2%;
