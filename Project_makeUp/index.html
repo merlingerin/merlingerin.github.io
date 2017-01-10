@@ -22,6 +22,9 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
     <!-- PAGE WRAPPER-->
+    <div id="page-preloader">
+      <div id="status-preloader"></div>
+    </div>
     <div class="page-wrapper">
       <!--HEADER -->
       <header id="header">
@@ -29,12 +32,12 @@
           <div class="container">
             <nav class="header-navigation clearfix"><span class="main-nav-trigger trigger-nav">&#9776;</span>
               <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="#!">Преимущества</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Цены</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Галлерея работ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Отзывы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Частые вопросы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Преимущества</a></li>
+                <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
+                <li class="nav-item"><a class="nav-link" href="#works">Галлерея работ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimotions">Отзывы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">Частые вопросы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -46,13 +49,21 @@
             <h2 class="hero-subtitle">Качественное наращивание ресниц от профессионального мастера</h2>
           </div>
           <!-- HEADER HERO-->
-          <div class="booking-online"><span class="title">Запишись уже завтра</span>
+          <div class="booking-online wow zoomIn"><span class="title">Запишись уже завтра</span>
             <div class="inside-part purpul">
               <div class="telephone"><a href="tel:0933333333"><i class="icon-phone purpul"></i><span class="tel-number">093 333 33 33</span></a></div>
               <div class="socials"><a class="social-link" href="callto://usernumber"><img class="wapp-icon" src="images/icons/whatsapp.svg"></a><a class="social-link" href="callto://usernumber"><img class="viber-icon" src="images/icons/viber.svg"></a></div>
               <div class="address"><span class="address-text">Софиевская Борщаговка, ЖК “София”, ул. Боголюбова 4</span></div>
               <button class="btn-booking btn" type="button">Записаться Онлайн</button>
             </div>
+          </div>
+          <div class="modal order-form"><span class="modal-title">Записаться Онлайн</span>
+            <form class="form" name="booking" autocomplete="on">
+              <input type="text" name="name" placeholder="Ваше Имя">
+              <input type="text" name="phone" placeholder="Номер Телефона">
+              <input type="text" name="time" placeholder="Удобное время (утро/день/вечер)">
+              <input type="submit" name="submit" value="Записаться"><span class="form-text">Ваши данные не будут переданы третьим лицам</span>
+            </form>
           </div>
         </div>
         <!--BOOKING ONLINE-->
@@ -125,13 +136,13 @@
       <!--SECTION SEPARATOR 2-->
       <section class="section-separator-2">
         <div class="container">
-          <div class="separator-wrapper"><span class="separator-title">Мечты становятся реальностью</span><span class="separator-subtitle">Во время процедуры наращивания ресниц ты сможешь и отдохнуть, и помечтать,<br>и поразмышлять о разных приятных мелочах... и даже поспать :)</span></div>
+          <div class="separator-wrapper"><span class="separator-title">Мечты становятся реальностью</span><span class="separator-subtitle" id="deleteBr">Во время процедуры наращивания ресниц ты сможешь и отдохнуть, и помечтать,<br>и поразмышлять о разных приятных мелочах... и даже поспать :)</span></div>
         </div>
       </section>
       <!--END SECTION SEPARATOR 2-->
       <!--SECTION FEATURES-->
       <section class="stn-p features clearfix">
-        <div class="container">
+        <div class="container"><a name="features"></a>
           <!--TITLE-->
           <div class="title-wrapper">
             <hr class="decor-title">
@@ -216,7 +227,7 @@
       <!--END SECTION SEPARATOR 3-->
       <!--SECTION EASY-CHOICE-->
       <section class="stn-p easy-choice purpul">
-        <div class="container">
+        <div class="container"><a name="prices"></a>
           <!--TITLE-->
           <div class="title-wrapper">
             <hr class="decor-title">
@@ -285,7 +296,7 @@
       <!--END SECTION EASY-CHOICE-->
       <!--SECTION MY-WORKS-->
       <section class="MY-WROKS stn-p">
-        <div class="container">
+        <div class="container"><a name="works"></a>
           <!--TITLE-->
           <div class="title-wrapper">
             <hr class="decor-title">
@@ -308,7 +319,7 @@
       <!--END SECTION MY-WORKS-->
       <!--SECTION TESTIMOTION-->
       <section class="testimotions stn-p purpul">
-        <div class="container">
+        <div class="container"><a name="testimotions"></a>
           <!--TITLE-->
           <div class="title-wrapper">
             <hr class="decor-title decor-title-bg">
@@ -374,7 +385,7 @@
       <!--END SECTION MAKE AN ORDER-->
       <!--SECTION FAQ-->
       <section class="faq stn-p">
-        <div class="container">
+        <div class="container"><a name="faq"></a>
           <!--TITLE-->
           <div class="title-wrapper">
             <hr class="decor-title white-border">
@@ -423,7 +434,7 @@
       <!--SECTION MAP-->
       <section id="map">
         <div class="w3-grayscale" id="googleMap" style="width:100%;height:392px"></div>
-        <div class="container">
+        <div class="container"><a name="contacts"></a>
           <div class="booking-online">
             <div class="inside-part">
               <div class="address"><i class="icon-location"></i><span class="address-text">Софиевская Борщаговка,<br> ЖК “София”,<br> ул. Боголюбова 4</span></div>
@@ -455,4 +466,5 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRlxlXWWQpFiA9BnSVIk_be63Dnm0FAik&amp;callback=initMap"></script>
   <script src="scripts/jquery.bxslider.min.js"></script>
   <script src="scripts/main.min.js"></script>
+  <script src="scripts/wow.min.js"></script>
 </html>

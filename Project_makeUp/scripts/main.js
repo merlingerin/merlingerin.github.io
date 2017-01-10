@@ -13,15 +13,19 @@ $(function(){
         });
     });
 });
-
+$(window).on('load', function(){
+	$('#status-preloader').fadeOut();
+	$('#page-preloader').delay(1000).fadeOut('slow');
+});
 $(document).ready(function(){
-
+    //WOW ANIMATE
+    new WOW().init();
   //SLIDER #1
   $('#slider1').bxSlider({
     slideWidth: 270,
     minSlides: 1,
     maxSlides: 4,
-    slideMargin: 20,
+    slideMargin: 30,
     responsive: true,
     infiniteLoop: true
   });
@@ -134,4 +138,27 @@ $(document).ready(function(){
       
     }
      mobileMenu();
+     
+
+     function deleteBr () {
+        var that = $('#deleteBr'),
+            br  = $('br'),
+            aim = that.find(br);
+
+            if ($(window).width() < 768){
+                console.log('work');
+                aim.remove();
+            }
+     }
+     deleteBr ();
+     
+     //MODAL WINDOW ANIMATION
+     $('.btn-booking').click(function(){
+        var modal = $('.modal');    
+            
+        console.log(modal);
+        modal.show().toggleClass('wow').toggleClass('zoomIn');
+
+     });
+     
 });
