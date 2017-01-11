@@ -152,17 +152,19 @@ $(document).ready(function(){
      deleteBr ();
      
      //MODAL WINDOW ANIMATION
+
      $('.btn-booking').click(function(){
-        var modal = $('.modal');    
+        var modal = $('.modal-wrapper');    
             
         console.log(modal);
         modal.stop().slideDown();
 
      });
-     $('.modal').click(function(){
-        var that = $(this);    
+     $('.btn-close').click(function(){
+        var that = $(this),
+            modal = $('.modal-wrapper');    
             
-        that.stop().slideUp();
+        modal.stop().slideUp();
         
      });
      
