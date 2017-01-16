@@ -221,10 +221,10 @@ time, mark, audio, video {
 .header_menu{
     height: 62px;
     width: 100%;
+    max-width: 100%;
     background: url(images/menu_bg.png) top repeat-x;
     position: fixed;
     z-index: 200;
-    max-width: 320px;
 }
 .header_menu ul{
     max-width: 1200px;
@@ -282,7 +282,7 @@ time, mark, audio, video {
 }
 .header320{
     width: 100%;
-    max-width: 320px;
+    max-width: 100%;
     display: none;
 }
 .menu_knopka{
@@ -1765,6 +1765,7 @@ time, mark, audio, video {
 
 
 /*MODAL2*/
+.form_body { height: 100%; }
 .form_body-text {
     display: block;
     font-family: HelveticaNeueCyr-Roman;
@@ -1879,13 +1880,13 @@ textarea{
 
 #modal5 .form1 {
     width: 45%;
-    top: 5%;
+    top: 10%;
     background: #ffffff;
     border: 3px solid #ce4ea1;
 }
 
 #modal5 .item-content {
-    padding: 4%;
+    padding: 7%;
 }
 
 #modal5 .slick-next {

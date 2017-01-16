@@ -278,6 +278,12 @@
 	.item-img {
 		display: none;
 	}
+	#modal5 .slick-next {
+    	right: -5%;
+	}
+	#modal5 .slick-prev {
+	    left: -5%;
+	}
 }
 @media (max-width: 768px){
 	.header_menu{
@@ -515,7 +521,7 @@
 		height: 550px;
 	}
 	.block9_container{
-		width: 320px;
+		width: 80%;
 	}
 	.block9_left{
 		width: 320px;

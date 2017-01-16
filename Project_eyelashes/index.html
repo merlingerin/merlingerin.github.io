@@ -46,7 +46,7 @@
 				<form action="Thanks.php" id="modal2_form-1" method="post" requared>
 					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
 					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
-					<textarea class="inp_oval inp_modal inp_textarea" type="text" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
+					<textarea class="inp_oval inp_modal inp_textarea" name="text" type="text" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
 					<input class="oval_submit inp_modal btn-form btn-enroll" type="submit" value="Отправить">
 				</form>
 			</div>
@@ -59,10 +59,10 @@
 				<div class="form_zag">Заказать звонок</div>
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
-				<form action="Thanks.php" id="modal2_form-1" method="post" requared>
+				<form  id="modal2_callback" method="post" requared>
 					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
 					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
-					<input class="oval_submit inp_modal btn-form" type="submit" value="Заказать">
+					<input id="callback-sub" class="oval_submit inp_modal btn-form" type="submit" value="Заказать">
 				</form>
 			</div>
 			</div>
@@ -128,7 +128,7 @@
 		</div>
 		<div class="str_top"></div>
 		<div class="header_menu">
-			<div class="header320 clearfix">
+			<div class="header320">
 				<div class="menu_knopka"></div>
 				<div class="telknopka"></div>
 				<div class="metroknopka"></div>
@@ -365,7 +365,7 @@
 							</table>
 						</div>
 						<div class="clear"></div>
-						<div class="button btn btn-long center">Хочу также</div>
+						<div class="btn-enroll button btn btn-long center">Хочу также</div>
 					</div>
 					<div class="rab_opis slider-for">
 						<div class="rab_opis_right">

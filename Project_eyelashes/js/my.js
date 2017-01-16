@@ -211,7 +211,18 @@
 	});
 
 	//AJAX FORM
-		$("#enroll-header").submit(function() {
+	$("#enroll-header").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "Thanks.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+		});
+		return false;
+	});
+
+	$("#modal2_callback").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "Thanks.php",
