@@ -29,6 +29,12 @@
 			<div class="pop_form"></div>
 			<div class="pop_thanks"></div>
 		</div>
+		<div id="modal1">
+			<div class="modal_bg"></div>
+			<div class="pop_thanks">
+				<span class="thanks-title">Спасибо, запись порошла успешно</span>
+			</div>
+		</div>
 		<div id="modal2">
 			<div class="modal_bg"></div>
 			<div class="form1">
@@ -36,11 +42,11 @@
 				<div class="form_zag">Задать вопрос мастеру</div>
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
-				<form action="" id="modal2_form-1" method="post" requared>
+				<form action="#" id="modal2_form-1" method="post" requared>
 					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
 					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
 					<textarea class="inp_oval inp_modal inp_textarea" type="text" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
-					<input class="oval_submit inp_modal btn-form" type="submit" value="Отправить">
+					<input class="oval_submit inp_modal btn-form btn-enroll" type="submit" value="Отправить">
 				</form>
 			</div>
 			</div>
@@ -73,6 +79,50 @@
 					<input class="oval_submit inp_modal btn-form" type="submit" value="Записаться">
 				</form>
 			</div>
+			</div>
+		</div>
+		<div id="modal5">
+			<div class="modal_bg"></div>
+			<div class="form1">
+				<button class="btn-close"></button>
+				<div id="slider-ratush" class="ratush-slider">
+					<div class="ratush-slider-item-1">
+						<div class="item-img">
+							<img src="images/ratush-slider.jpg" alt="">
+						</div>
+						<div class="item-content">
+							<span class="item-title">РАСТУШЕВКА БРОВЕЙ</span>
+							<p class="item-desc">Да, глаза мочить можно. Вы можете спокойно поехать с ними в отпуск, пойти в баню, посетить сауну или проплыть половину бассейна . Полимеризация нашего клея происходит за считанные минуты. К тому моменту, как мастер закончит работу, Вы уже смело сможете умываться и принимать душ. Вам не портебуется ждать сутки или хоть как-то ограничивать себя в течение нескольких дней. И это никак не повлияет на срок носки.</p>
+							<span class="item-price">Мастер<strong>4000 p</strong></span>
+							<span class="item-price">ТOP-mастер<strong>7000 p</strong></span>
+							<button class="btn center">Записаться</button>
+						</div>
+					</div>
+					<div class="ratush-slider-item-1">
+						<div class="item-img">
+							<img src="images/ratush-slider.jpg" alt="">
+						</div>
+						<div class="item-content">
+							<span class="item-title">РАСТУШЕВКА БРОВЕЙ</span>
+							<p class="item-desc">Да, глаза мочить можно. Вы можете спокойно поехать с ними в отпуск, пойти в баню, посетить сауну или проплыть половину бассейна . Полимеризация нашего клея происходит за считанные минуты. К тому моменту, как мастер закончит работу, Вы уже смело сможете умываться и принимать душ. Вам не портебуется ждать сутки или хоть как-то ограничивать себя в течение нескольких дней. И это никак не повлияет на срок носки.</p>
+							<span class="item-price">Мастер<strong>4000 p</strong></span>
+							<span class="item-price">Топ Мастер<strong>7000 p</strong></span>
+							<button class="btn center">Записаться</button>
+						</div>
+					</div>
+					<div class="ratush-slider-item-1">
+						<div class="item-img">
+							<img src="images/ratush-slider.jpg" alt="">
+						</div>
+						<div class="item-content">
+							<span class="item-title">РАСТУШЕВКА БРОВЕЙ</span>
+							<p class="item-desc">Да, глаза мочить можно. Вы можете спокойно поехать с ними в отпуск, пойти в баню, посетить сауну или проплыть половину бассейна . Полимеризация нашего клея происходит за считанные минуты. К тому моменту, как мастер закончит работу, Вы уже смело сможете умываться и принимать душ. Вам не портебуется ждать сутки или хоть как-то ограничивать себя в течение нескольких дней. И это никак не повлияет на срок носки.</p>
+							<span class="item-price">Мастер<strong>4000 p</strong></span>
+							<span class="item-price">Топ Мастер<strong>7000 p</strong></span>
+							<button class="btn center">Записаться</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="str_top"></div>
@@ -119,7 +169,7 @@
 					<p class="p2">Забронируйте время</p>
 					<p class="p3">консультация бесплатно</p>
 					<div class="block1_form">
-						<form method="post">
+						<form id="enroll-header" method="post">
 							<input name="name" class="inp_oval" placeholder="Ваше имя">
 							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
 							<input type="submit" class="oval_submit btn" value="Записаться">
@@ -239,7 +289,7 @@
 					<h1>Забронируйте время</h1>
 					<h2>Консультация бесплатно</h2>		
 					<div class="block4_form">
-						<form method="post">
+						<form id="booking-time-1" method="post">
 							<input name="name" class="inp_oval" placeholder="Ваше имя">
 							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
 							<input type="submit" class="oval_submit btn" value="Записаться">
@@ -254,66 +304,396 @@
 				<h1>Работы мастеров салона</h1>
 				<h2>Несколько работ из тысячи</h2>
 				<div class="rab_container">
-					<div class="rab_container_container">
+					<div id="slider-works" class="rab_container_container">
 						<ul>
 							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz2.jpg"></li>
+							<li><img src="images/glaz3.jpg"></li>
+							<li><img src="images/glaz4.jpg"></li>
+							<li class="active"><img class="active" src="images/glaz5.jpg"></li>
+							<li><img src="images/glaz6.jpg"></li>
+							<li><img src="images/glaz7.jpg"></li>
+							<li><img src="images/glaz8.jpg"></li>
 							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li class="active"><img class="active" src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
-							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz2.jpg"></li>
+							<li><img src="images/glaz3.jpg"></li>
+							<li><img src="images/glaz4.jpg"></li>
+							<li><img src="images/glaz5.jpg"></li>
 						</ul>
 					</div>
 					<div class="nav_left"></div>
 					<div class="nav_right"></div>
 				</div>
-				<div class="rab_opis">
-					<div class="rab_opis_right">
-						<img src="images/glaz.jpg">
+				<div class="rab_opis-wrapper">
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz1.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Голливудский</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
 					</div>
-					<div class="rab_opis_left">
-						<h3>Особенности</h3>
-						<div class="polosa"></div>
-						<table>
-							<tr>
-								<td>Эффект</td>
-								<td>Голливудский</td>
-							</tr>
-							<tr>
-								<td>Объём</td>
-								<td>5D</td>
-							</tr>
-							<tr>
-								<td>Материалы</td>
-								<td>EvaBond P1 Collection</td>
-							</tr>
-							<tr>
-								<td>Цвет</td>
-								<td>Натуральный чёрный</td>
-							</tr>
-							<tr>
-								<td>Изгиб</td>
-								<td>L</td>
-							</tr>
-							<tr>
-								<td>Толщина</td>
-								<td>0,07мм</td>
-							</tr>
-							<tr>
-								<td>Длина</td>
-								<td>1 см</td>
-							</tr>
-						</table>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz2.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Modern</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
 					</div>
-					<div class="clear"></div>
-					<div class="button btn btn-long center">Хочу также</div>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz3.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz4.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
+					<div class="rab_opis slider-for active">
+						<div class="rab_opis_right">
+							<img src="images/glaz5.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz6.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz7.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz8.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
+					<div class="rab_opis slider-for">
+						<div class="rab_opis_right">
+							<img src="images/glaz1.jpg">
+						</div>
+						<div class="rab_opis_left">
+							<h3>Особенности</h3>
+							<div class="polosa"></div>
+							<table>
+								<tr>
+									<td>Эффект</td>
+									<td>Classic</td>
+								</tr>
+								<tr>
+									<td>Объём</td>
+									<td>5D</td>
+								</tr>
+								<tr>
+									<td>Материалы</td>
+									<td>EvaBond P1 Collection</td>
+								</tr>
+								<tr>
+									<td>Цвет</td>
+									<td>Натуральный чёрный</td>
+								</tr>
+								<tr>
+									<td>Изгиб</td>
+									<td>L</td>
+								</tr>
+								<tr>
+									<td>Толщина</td>
+									<td>0,07мм</td>
+								</tr>
+								<tr>
+									<td>Длина</td>
+									<td>1 см</td>
+								</tr>
+							</table>
+						</div>
+						<div class="clear"></div>
+						<div class="button btn btn-long center">Хочу также</div>
+					</div>
 				</div>
 				<div class="block6_top"></div>	
 			</div>	
@@ -342,20 +722,36 @@
 		<div class="block7" id="tehn">
 			<div class="block7_zag_poloska"></div>
 			<h1>Технология наращивания ресниц</h1>
-			<h2>Как мы наращиванем ресницы в нашем салоне в Москве</h2>		
+			<h2>Как мы наращиванем ресницы в нашем салоне в Москве</h2>	
 			<div class="block7_container">
-				<div class="block7_opis">
+				<div class="block7_opis content-item active-content">
+					<img src="images/op_img.jpg">
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+				<div class="block7_opis content-item">
 					<img src="images/op_img.jpg">
 					<p>В работе используются только сертифицированные IBSS узлы и пигменты премиум-уровня. <br>Мастера имеют дипломы и опыт более 1000 часов. Только одноразовые инструменты, перчатки и иглы.</p>
 				</div>
+				<div class="block7_opis content-item">
+					<img src="images/op_img.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ut, atque est earum assumenda officia!</p>
+				</div>
+				<div class="block7_opis content-item">
+					<img src="images/op_img.jpg">
+					<p>Lorem </p>
+				</div>
+				<div class="block7_opis content-item">
+					<img src="images/op_img.jpg">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, ut, atque est earum assumenda officia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, inventore.</p>
+				</div>
 			</div>
 			<div class="block7_items">
-				<ul>
-					<li class="item1 active">Красиво</li>
-					<li class="item2">Стойкость 50 дней</li>
-					<li class="item3">Удобно</li>
-					<li class="item4">Качественно</li>
-					<li class="item5">Полная безопасность</li>
+				<ul class="tab-controls-list">
+					<li class="item1 controls-item active">Красиво</li>
+					<li class="item2 controls-item">Стойкость 50 дней</li>
+					<li class="item3 controls-item">Удобно</li>
+					<li class="item4 controls-item">Качественно</li>
+					<li class="item5 controls-item">Полная безопасность</li>
 				</ul>
 			</div>
 			<div class="block7_bottom"></div>
@@ -366,7 +762,7 @@
 					<h1>Забронируйте время</h1>
 					<h2>Консультация бесплатно</h2>		
 					<div class="block7_form">
-						<form method="post">
+						<form id="booking-time-2" method="post">
 							<input name="name" class="inp_oval" placeholder="Ваше имя">
 							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
 							<input type="submit" class="oval_submit btn" value="Записаться">
@@ -391,7 +787,7 @@
 							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
 							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
 						</table>
-						<button class="btn center">Записаться</button>
+						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
 				<div class="block8_right">
@@ -403,7 +799,7 @@
 							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
 							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
 						</table>
-						<button class="btn center">Записаться</button>
+						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -416,7 +812,7 @@
 							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
 							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
 						</table>
-						<button class="btn center">Записаться</button>
+						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
 				<div class="block8_right">
@@ -428,7 +824,7 @@
 							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
 							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
 						</table>
-						<button class="btn center">Записаться</button>
+						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -441,7 +837,7 @@
 							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
 							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
 						</table>
-						<button class="btn center">Записаться</button>
+						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
 				<div class="block8_right">
@@ -453,7 +849,7 @@
 							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
 							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
 						</table>
-						<button class="btn center">Записаться</button>
+						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
 				<div class="clear"></div>
