@@ -43,8 +43,8 @@
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
 				<form action="#" id="modal2_form-1" method="post" requared>
-					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
-					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
+					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
+					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
 					<textarea class="inp_oval inp_modal inp_textarea" type="text" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
 					<input class="oval_submit inp_modal btn-form btn-enroll" type="submit" value="Отправить">
 				</form>
@@ -59,8 +59,8 @@
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
 				<form action="" id="modal2_form-1" method="post" requared>
-					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
-					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
+					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
+					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
 					<input class="oval_submit inp_modal btn-form" type="submit" value="Заказать">
 				</form>
 			</div>
@@ -74,8 +74,8 @@
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
 				<form action="" id="modal3_form-1" method="post" requared>
-					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
-					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
+					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
+					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
 					<input class="oval_submit inp_modal btn-form" type="submit" value="Записаться">
 				</form>
 			</div>
@@ -132,9 +132,9 @@
 				<div class="telknopka"></div>
 				<div class="metroknopka"></div>
 			</div>
-			<ul>
+			<ul class="justify-align">
 				<div class="logo_menu"></div>
-				<li><a href="#tur">Тур по мастерской</a></li>
+				<li class="first-li"><a href="#tur">Тур по мастерской</a></li>
 				<li><a href="#tehn">Технологии</a></li>
 				<li><a href="#cena">Цены</a></li>
 				<li><a href="#faq">FAQ</a></li>
@@ -145,7 +145,7 @@
 		</div>
 		<div class="block1" id="tur">
 			<div class="block1_head">
-				<div class="block1_head_container">
+				<div class="block1_head_container clearfix">
 					<div class="logo"></div>
 					<div class="metro">
 						<p class="cursiv">Москва, м.Таганская,</p>
@@ -170,13 +170,13 @@
 					<p class="p3">консультация бесплатно</p>
 					<div class="block1_form">
 						<form id="enroll-header" method="post">
-							<input name="name" class="inp_oval" placeholder="Ваше имя">
-							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
+							<input name="name" class="inp_oval" placeholder="Ваше имя" requared>
+							<input name="phone" class="inp_oval" placeholder="Ваш телефон" requared>
 							<input type="submit" class="oval_submit btn" value="Записаться">
 						</form>
 					</div>
 					<p class="p1" id="p1_2">В нашей студии работают мастера - <br>чемпионы мира и России</p>
-					<button class="block1_button">Записаться</button>
+					<button class="enroll btn-tablet block1_button">Записаться</button>
 					<div class="block1_bottom clearfix">
 						<div class="pre1">Экономия<br>до 1 часа в день</div>
 						<div class="pre2">Влагостойкий эффект<br>идеально для моря<br>и бассейна</div>
@@ -290,8 +290,8 @@
 					<h2>Консультация бесплатно</h2>		
 					<div class="block4_form">
 						<form id="booking-time-1" method="post">
-							<input name="name" class="inp_oval" placeholder="Ваше имя">
-							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
+							<input name="name" class="inp_oval" placeholder="Ваше имя" requared>
+							<input name="phone" class="inp_oval" placeholder="Ваш телефон" requared>
 							<input type="submit" class="oval_submit btn" value="Записаться">
 						</form>
 					</div>	
@@ -763,8 +763,8 @@
 					<h2>Консультация бесплатно</h2>		
 					<div class="block7_form">
 						<form id="booking-time-2" method="post">
-							<input name="name" class="inp_oval" placeholder="Ваше имя">
-							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
+							<input name="name" class="inp_oval" placeholder="Ваше имя" requared>
+							<input name="phone" class="inp_oval" placeholder="Ваш телефон" requared>
 							<input type="submit" class="oval_submit btn" value="Записаться">
 						</form>
 					</div>	
@@ -882,7 +882,7 @@
 					<div class="widget2"></div>
 					<div class="clear"></div>
 				</div>		
-				<button id="enroll" class="btn center">Записаться</button>
+				<button class=" enroll btn center">Записаться</button>
 			</div>
 		</div>
 		<div class="block11" id="contacts">

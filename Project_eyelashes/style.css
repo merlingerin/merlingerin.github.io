@@ -243,7 +243,6 @@ time, mark, audio, video {
     background: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 4%, rgba(255,255,255,0) 100%); /* IE 10+ */
     background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 4%, rgba(255,255,255,0) 100%);/* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );/* IE6-9 */
-
     height: 100%;
 }
 .header_menu ul li a{
@@ -269,12 +268,16 @@ time, mark, audio, video {
 }
 .zvonok_media{
     display: none;
-    width: 58px;
-    height: 54px;
-    background:url(images/top_zvonok.png);
+    width: 52px;
+    height: 52px;
+    border: 2px solid #c192e4;
+    border-radius: 50%;
+    background:url(images/phone-icon.png) center no-repeat;
+    background-position: 15px 8px;
     float: left;
-    margin-left: 40px;
-    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 8%;
+    margin-top: 3%;
 }
 .header320{
     width: 100%;
@@ -525,13 +528,10 @@ time, mark, audio, video {
     margin-left: 16px;
     outline: none;
 }
-.inp_oval:hover, :focus{
+.inp_oval:hover, .inp_oval:focus{
     box-shadow: inset 0 3px 5px rgba(0,0,0, 0.35); 
 }
 
-.inp_oval:hover::-webkit-input-placeholder {
-    color: red;
-}
 .inp_oval:hover::-webkit-input-placeholder {color: #666666;}
 .inp_oval:hover::-moz-placeholder          {color: #666666;}
 .inp_oval:hover:-moz-placeholder           {color: #666666;}
@@ -1789,7 +1789,7 @@ textarea{
     font-family: HelveticaNeueCyr-Roman; 
 }
 
-.btn, .btn-form {
+.btn, .btn-form, .btn-tablet {
     box-sizing: border-box;
     background: rgba(254,17,162,1);
     background: -moz-linear-gradient(top, rgba(254,17,162,1) 0%, rgba(245,9,153,1) 47%, rgba(234,0,143,1) 100%);
@@ -1812,7 +1812,7 @@ textarea{
     box-shadow: 0px 4px 0px 2px #c7007a; 
 }
 
-.btn:hover,  .btn-form:hover {
+.btn:hover,  .btn-form:hover, .btn-tablet:hover {
     background: rgba(255,17,212,1);
     background: -moz-linear-gradient(top, rgba(255,17,212,1) 0%, rgba(244,8,175,1) 53%, rgba(234,0,143,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,17,212,1)), color-stop(53%, rgba(244,8,175,1)), color-stop(100%, rgba(234,0,143,1)));
@@ -1821,7 +1821,7 @@ textarea{
     background: -ms-linear-gradient(top, rgba(255,17,212,1) 0%, rgba(244,8,175,1) 53%, rgba(234,0,143,1) 100%);
     background: linear-gradient(to bottom, rgba(255,17,212,1) 0%, rgba(244,8,175,1) 53%, rgba(234,0,143,1) 100%);
 }
-.btn:active,  .btn-form:active {
+.btn:active,  .btn-form:active, .btn-tablet:active {
     outline: none;
     background: rgba(215,0,80,1);
     background: -moz-linear-gradient(top, rgba(215,0,80,1) 0%, rgba(235,8,121,1) 53%, rgba(252,16,158,1) 100%);
@@ -1831,8 +1831,8 @@ textarea{
     background: -ms-linear-gradient(top, rgba(215,0,80,1) 0%, rgba(235,8,121,1) 53%, rgba(252,16,158,1) 100%);
     background: linear-gradient(to bottom, rgba(215,0,80,1) 0%, rgba(235,8,121,1) 53%, rgba(252,16,158,1) 100%);
 }
-.btn:focus{ outline: none; }
-
+.btn:focus, .btn-tablet:focus { outline: none; }
+.btn-tablet { display: none; }
 .btn-form {
     width: 75%;
     padding: 14px 25px;

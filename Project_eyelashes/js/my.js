@@ -186,7 +186,7 @@
 	$('.btn-close').click(function(){
 		$('#modal2').stop().fadeOut();
 	});
-	$('#enroll').click(function(){
+	$('.enroll').click(function(){
 		$('#modal4').stop().fadeIn();
 	});
 	$('#callback').click(function(){
@@ -209,6 +209,17 @@
 	   // setting-name: setting-value
 		});
 	});
-	
+
+	//AJAX FORM
+		$("#enroll-header").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "Thanks.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+		});
+		return false;
+	});
 
 });

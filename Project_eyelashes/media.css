@@ -43,16 +43,41 @@
 	}
 }
 @media (max-width: 1280px){
+	.header_menu ul {
+		text-align: justify;
+		width: 768px;
+	}
+	.justify-align:after {
+		content: '';
+		width: 100%;
+		display: inline-block;
+		visibility: hidden;
+	}
+	.header_menu ul li { 
+		display: inline-block;
+		float: none;
+	}
+	.header_menu .first-li {
+		margin-left: 0;
+	}
 	.header_menu ul li a{
-		padding-left: 4.5vw;
-    	padding-right: 4.5vw;
+		padding-left: 1.8vw;
+    	padding-right: 1.8vw;
+	}
+	.block1_head_container .logo {
+		width: 30%;
+		margin-left: 0;
 	}
 	.block1_head_container .metro{
-		background:url(images/top_metro.png);
-		width: 59px;
-		height: 54px;
+		background:url(images/metro-icon.png) center no-repeat;
+		background-position: 6px 9px;
+		border: 2px solid #c192e4;
+		border-radius: 50%;
+		width: 52px;
+		height: 52px;
 		cursor: pointer;
-		margin-left: 40px;
+		margin-left: 7%;
+		margin-top: 3%;
 	}
 	.metro p{
 		display: none;
@@ -64,8 +89,16 @@
 	    display: block;
 	}	
 	.phones{
+		width: 30%;
+		float: right;
 		margin-left: 50px;
 	}
+	.block1_content {
+		background-position: -10% 0, 112% 0, left bottom;
+	}
+	.block1_content .container h1 { font-size: 54px; }
+	.block1_content .container h2 { font-size: 28px; }
+	.block1_content .container h3 { font-size: 16px; }
 	.block1_head_container{
 		width: 768px;
 	}
@@ -178,9 +211,13 @@
 	}
 }
 @media (max-width: 1000px){
+
 	.header_menu ul li a{
-		padding-left: 3vw;
-    	padding-right: 3vw;
+		padding-left: 2.3vw;
+    	padding-right: 2.3vw;
+	}
+	.block1_content {
+		background-position: -20% 0, 120% 0, left bottom;
 	}
 	.block1_form{
 		display: none;
@@ -188,6 +225,7 @@
 	.block1_button{
 		display: block;
 	}
+
 	.block4_form_container{
 		width: 92vw;
 	}
@@ -196,7 +234,6 @@
 	}
 	.inp_oval{
 		width: 22vw;
-		margin-left: 1.6vw;
 	}
 	.oval_submit{
 		width: 22vw;
@@ -219,6 +256,9 @@
 	}
 	.footer_contaner{
 		width: 91vw;
+	}
+	.btn-tablet {
+		display: block;
 	}
 }
 @media (max-width: 768px){
@@ -378,6 +418,7 @@
 		height: 220px;
 
 	}
+
 	.block4-form p{
 		width: 224px;
 		text-align: center;
@@ -488,5 +529,13 @@
 	}
 	#map{
 		width: 100vw;
+	}
+	.block4_form .inp_oval { 
+		margin: 8% auto 0;
+		width: 90%;
+	}
+	.block4_form .oval_submit {
+		width: 100%;
+		margin: 8% auto 0;
 	}
 }
