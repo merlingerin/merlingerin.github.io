@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Наращивание ресниц</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" size="32x32" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="media.css">
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+	<div class="page-wrapper">
+		<div id="modal">
+			<div class="popup"></div>
+			<div class="popimg"><img src="images/int/1.jpg"></div>
+			<div class="str_left"></div>
+			<div class="str_right"></div>	
+			<div class="pop_form"></div>
+			<div class="pop_thanks"></div>
+		</div>
+		<div id="modal2">
+			<div class="modal_bg"></div>
+			<div class="form1">
+				<button class="btn-close"></button>
+				<div class="form_zag">Задать вопрос мастеру</div>
+				<div class="form_body">
+				<span class="form_body-text">консультация бесплатно</span>
+				<form action="" id="modal2_form-1" method="post" requared>
+					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
+					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
+					<textarea class="inp_oval inp_modal inp_textarea" type="text" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
+					<input class="oval_submit inp_modal btn-form" type="submit" value="Отправить">
+				</form>
+			</div>
+			</div>
+		</div>
+		<div id="modal3">
+			<div class="modal_bg"></div>
+			<div class="form1">
+				<button class="btn-close"></button>
+				<div class="form_zag">Заказать звонок</div>
+				<div class="form_body">
+				<span class="form_body-text">консультация бесплатно</span>
+				<form action="" id="modal2_form-1" method="post" requared>
+					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
+					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
+					<input class="oval_submit inp_modal btn-form" type="submit" value="Заказать">
+				</form>
+			</div>
+			</div>
+		</div>
+		<div id="modal4">
+			<div class="modal_bg"></div>
+			<div class="form1">
+				<button class="btn-close"></button>
+				<div class="form_zag">Забронируйте время</div>
+				<div class="form_body">
+				<span class="form_body-text">консультация бесплатно</span>
+				<form action="" id="modal3_form-1" method="post" requared>
+					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя">
+					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон">
+					<input class="oval_submit inp_modal btn-form" type="submit" value="Записаться">
+				</form>
+			</div>
+			</div>
+		</div>
+		<div class="str_top"></div>
+		<div class="header_menu">
+			<div class="header320">
+				<div class="menu_knopka"></div>
+				<div class="telknopka"></div>
+				<div class="metroknopka"></div>
+			</div>
+			<ul>
+				<div class="logo_menu"></div>
+				<li><a href="#tur">Тур по мастерской</a></li>
+				<li><a href="#tehn">Технологии</a></li>
+				<li><a href="#cena">Цены</a></li>
+				<li><a href="#faq">FAQ</a></li>
+				<li><a href="#otziv">Отзывы</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+				<div class="menutel"><p>+7 <strong>495</strong> 104-83-87</p><a href="#"><img src="images/menutel.png"></a></div>
+			</ul>
+		</div>
+		<div class="block1" id="tur">
+			<div class="block1_head">
+				<div class="block1_head_container">
+					<div class="logo"></div>
+					<div class="metro">
+						<p class="cursiv">Москва, м.Таганская,</p>
+						<p class="sv">3 мин парковка</p>
+					</div>
+					<div class="zvonok_media"></div>
+					<div class="phones">
+						<p class="phone1">+7</p><p class="phone1_strong">495</p><p class="phone1">104-83-87</p>
+						<p class="phone2">+7 916 657-39-67</p><a href="#"><img src="images/tel_bg.png"></a><a href="#"><img src="images/insta_bg.png"></a>
+					</div>
+					<div id="callback" class="zvonok">Обратный звонок</div>
+				</div>
+			</div>
+			<div class="block1_content">
+				<div class="bg_kubok"></div>
+				<div class="container">
+					<h1>Наращивание</h1>
+					<h2>и ламинирование ресниц</h2>
+					<h3>в мастерской красоты Евы Бонд</h3>
+					<p class="p1" id="p1_1">В нашей студии работают мастера - <br>чемпионы мира и России</p>
+					<p class="p2">Забронируйте время</p>
+					<p class="p3">консультация бесплатно</p>
+					<div class="block1_form">
+						<form method="post">
+							<input name="name" class="inp_oval" placeholder="Ваше имя">
+							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
+							<input type="submit" class="oval_submit btn" value="Записаться">
+						</form>
+					</div>
+					<p class="p1" id="p1_2">В нашей студии работают мастера - <br>чемпионы мира и России</p>
+					<button class="block1_button">Записаться</button>
+					<div class="block1_bottom clearfix">
+						<div class="pre1">Экономия<br>до 1 часа в день</div>
+						<div class="pre2">Влагостойкий эффект<br>идеально для моря<br>и бассейна</div>
+						<div class="pre3">Скрывает недостатки,<br>подчеркивает<br>преимущества</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="block1_niz"></div>
+			</div>
+		</div>
+		<div class="block2">
+			<div class="block2_container">
+				<div class="block2_zag_poloska"></div>
+				<h1>Основатель студии - Ева Бонд</h1>
+				<h2>Один из нескольких гуру ресниц в мире</h2>
+				<div class="block2_content">
+					<div class="block2_left">
+						<ul>
+							<li class="item1">Опыт с 2006 года</li>
+							<li class="item2">Более 80 <br>личных наград</li>
+							<li class="item3">Генеральный судья<br>и организатор<br>чемпионатов</li>
+							<li class="item4">Основатель школы<br>красивого<br>бизнеса Евы Бонд</li>
+							<li class="item5">Обучила более<br>3000<br>мастеров</li>
+						</ul>
+					</div>
+					<div class="block2_right">
+						<ul>
+							<li class="item1">топ-10<br>мастеров мира</li>
+							<li class="item2">10 000 <br>благодарных девушек<br>и парней</li>
+							<li class="item3">Обучение<br>в 30+ странах</li>
+							<li class="item4">Автор методик,<br>книг и учебных пособий<br>по ресницам</li>
+							<li class="item5">Современный бренд<br>премиум-материалов для ресниц</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="block3">
+			<div class="lepestok1"></div>
+			<div class="lepestok2"></div>
+			<div class="lepestok3"></div>
+			<div class="block2_pod"></div>
+			<div class="block3_container">
+				<div class="block3_zag_poloska"></div>
+				<h1>Преимущества мастерской красоты Евы Бонд</h1>
+				<h2>Один из первых салонов по ресницам, <span>более 10 000 процедур</span></h2>
+				<div class="content">
+					<ul>
+						<li class="item1">Студия работает<br>с 2007 года</li>
+						<li class="item2">Работа на собственных<br>премиум-материалах</li>
+						<li class="item3">Мастера - чемпионы<br>России и мира</li>
+						<li class="item4">Система бонусов до 20%<br>и бесплатных процедур<br>для постоянных клиентов</li>
+						<div class="clear"></div>
+						<li class="item5">При топ-школе бровей<br>Иваны Шмит - гарантия<br>матеров России</li>
+						<li class="item6">В салон красоты развиты<br>практики ресниц<br>и ногтевого серсиса</li>
+						<li class="item7">Welcome-скидка на<br>микроблейдинги татуаж<br>для всех новых клиентов</li>
+						<li class="item8">Дизайн салона бровей<br>от ведущего Beauty<br>дизайнера Москвы</li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="block3_bottom"></div>
+			<div class="block4">
+				<div class="block3_zag_poloska"></div>
+				<h1>Интерьер студии</h1>
+				<div class="slider">
+					<ul>
+						<li id="slider_li"><img src="images/int/1_small.jpg"><div></div></li>
+						<li><img src="images/int/2_small.jpg"><div></div></li>
+						<li><img src="images/int/3_small.jpg"><div></div></li>
+						<li><img src="images/int/4_small.jpg"><div></div></li>
+						<li><img src="images/int/5_small.jpg"><div></div></li>
+						<li><img src="images/int/6_small.jpg"><div></div></li>
+						<li><img src="images/int/7_small.jpg"><div></div></li>
+						<li><img src="images/int/8_small.jpg"><div></div></li>
+						<li><img src="images/int/9_small.jpg"><div></div></li>
+						<li><img src="images/int/10_small.jpg"><div></div></li>
+						<li><img src="images/int/11_small.jpg"><div></div></li>
+						<li><img src="images/int/12_small.jpg"><div></div></li>
+						<li><img src="images/int/13_small.jpg"><div></div></li>
+						<li><img src="images/int/14_small.jpg"><div></div></li>
+						<li><img src="images/int/15_small.jpg"><div></div></li>
+						<li><img src="images/int/16_small.jpg"><div></div></li>
+						<li><img src="images/int/17_small.jpg"><div></div></li>
+						<li><img src="images/int/18_small.jpg"><div></div></li>
+						<li><img src="images/int/19_small.jpg"><div></div></li>
+						<li><img src="images/int/20_small.jpg"><div></div></li>
+						<li><img src="images/int/21_small.jpg"><div></div></li>
+						<li><img src="images/int/22_small.jpg"><div></div></li>
+						<li><img src="images/int/23_small.jpg"><div></div></li>
+						<li><img src="images/int/24_small.jpg"><div></div></li>
+						<li><img src="images/int/25_small.jpg"><div></div></li>
+						<li><img src="images/int/26_small.jpg"><div></div></li>
+						<li><img src="images/int/27_small.jpg"><div></div></li>
+						<li><img src="images/int/28_small.jpg"><div></div></li>
+						<li><img src="images/int/29_small.jpg"><div></div></li>
+						<li><img src="images/int/30_small.jpg"><div></div></li>
+					</ul>
+					<div class="nav_left"></div>
+					<div class="nav_right"></div>
+					<div class="pol_left"></div>
+					<div class="pol_right"></div>
+				</div>
+			</div>
+			<div class="block4_form_top"></div>
+			<div class="block4-form">
+				<div class="block4_form_container">
+					<div class="block2_zag_poloska"></div>
+					<h1>Забронируйте время</h1>
+					<h2>Консультация бесплатно</h2>		
+					<div class="block4_form">
+						<form method="post">
+							<input name="name" class="inp_oval" placeholder="Ваше имя">
+							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
+							<input type="submit" class="oval_submit btn" value="Записаться">
+						</form>
+					</div>	
+					<p>* Консультация бесплатно &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Дизайн и снятие включены</p>	
+				</div>
+			</div>		
+			<div class="block5">
+				<div class="block4_form_bottom"></div>
+				<div class="block5_zag_poloska"></div>
+				<h1>Работы мастеров салона</h1>
+				<h2>Несколько работ из тысячи</h2>
+				<div class="rab_container">
+					<div class="rab_container_container">
+						<ul>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li class="active"><img class="active" src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+							<li><img src="images/glaz1.jpg"></li>
+						</ul>
+					</div>
+					<div class="nav_left"></div>
+					<div class="nav_right"></div>
+				</div>
+				<div class="rab_opis">
+					<div class="rab_opis_right">
+						<img src="images/glaz.jpg">
+					</div>
+					<div class="rab_opis_left">
+						<h3>Особенности</h3>
+						<div class="polosa"></div>
+						<table>
+							<tr>
+								<td>Эффект</td>
+								<td>Голливудский</td>
+							</tr>
+							<tr>
+								<td>Объём</td>
+								<td>5D</td>
+							</tr>
+							<tr>
+								<td>Материалы</td>
+								<td>EvaBond P1 Collection</td>
+							</tr>
+							<tr>
+								<td>Цвет</td>
+								<td>Натуральный чёрный</td>
+							</tr>
+							<tr>
+								<td>Изгиб</td>
+								<td>L</td>
+							</tr>
+							<tr>
+								<td>Толщина</td>
+								<td>0,07мм</td>
+							</tr>
+							<tr>
+								<td>Длина</td>
+								<td>1 см</td>
+							</tr>
+						</table>
+					</div>
+					<div class="clear"></div>
+					<div class="button btn btn-long center">Хочу также</div>
+				</div>
+				<div class="block6_top"></div>	
+			</div>	
+		</div>
+		<div class="block6" id="otziv">
+			<div class="block6_zag_poloska"></div>
+			<h1>Отзывы клиентов студии<br>ресниц Евы Бонд</h1>
+			<h2>Всего с 2007 года клиентами Студии стали 10 000 девушек</h2>
+			<div class="block6_container">
+				<div class="block6_opis">
+					<div class="block6_slider">
+						<div class="slider_img-container">
+							<img src="images/block6_opis.jpg" alt="">
+						</div>
+						<div class="slider_img-container">
+							<img src="images/block6_opis.jpg" alt="">
+						</div>
+						<div class="slider_img-container">
+							<img src="images/block6_opis.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block7_top"></div>
+		</div>
+		<div class="block7" id="tehn">
+			<div class="block7_zag_poloska"></div>
+			<h1>Технология наращивания ресниц</h1>
+			<h2>Как мы наращиванем ресницы в нашем салоне в Москве</h2>		
+			<div class="block7_container">
+				<div class="block7_opis">
+					<img src="images/op_img.jpg">
+					<p>В работе используются только сертифицированные IBSS узлы и пигменты премиум-уровня. <br>Мастера имеют дипломы и опыт более 1000 часов. Только одноразовые инструменты, перчатки и иглы.</p>
+				</div>
+			</div>
+			<div class="block7_items">
+				<ul>
+					<li class="item1 active">Красиво</li>
+					<li class="item2">Стойкость 50 дней</li>
+					<li class="item3">Удобно</li>
+					<li class="item4">Качественно</li>
+					<li class="item5">Полная безопасность</li>
+				</ul>
+			</div>
+			<div class="block7_bottom"></div>
+		</div>
+		<div class="block7-form">
+				<div class="block7_form_container">
+					<div class="block7form_zag_poloska"></div>
+					<h1>Забронируйте время</h1>
+					<h2>Консультация бесплатно</h2>		
+					<div class="block7_form">
+						<form method="post">
+							<input name="name" class="inp_oval" placeholder="Ваше имя">
+							<input name="phone" class="inp_oval" placeholder="Ваш телефон">
+							<input type="submit" class="oval_submit btn" value="Записаться">
+						</form>
+					</div>	
+					<p>* Консультация бесплатно &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; * Дизайн и снятие включены</p>	
+				</div>
+				<div class="lilya"></div>
+		</div>
+		<div class="block8" id="cena">
+			<div class="block7_form_bottom"></div>	
+			<div class="block8_zag_poloska"></div>
+			<h1>Цена на услуги наращивания<br>и ламинирования ресниц</h1>
+			<h2>Прайс-лист на микроблейдинг и татуаж в Студии</h2>		
+			<div class="block8_container">
+				<div class="block8_left">
+					<img src="images/block8_left_bg.jpg">
+					<div class="block8_cont">
+						<h3>Растушевка бровей</h3>
+						<p>Татуаж бровей</p>
+						<table>
+							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
+							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
+						</table>
+						<button class="btn center">Записаться</button>
+					</div>
+				</div>
+				<div class="block8_right">
+					<img src="images/block8_left_bg.jpg">
+					<div class="block8_cont">
+						<h3>Растушевка бровей</h3>
+						<p>Татуаж бровей</p>
+						<table>
+							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
+							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
+						</table>
+						<button class="btn center">Записаться</button>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="block8_left">
+					<img src="images/block8_left_bg.jpg">
+					<div class="block8_cont">
+						<h3>Растушевка бровей</h3>
+						<p>Татуаж бровей</p>
+						<table>
+							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
+							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
+						</table>
+						<button class="btn center">Записаться</button>
+					</div>
+				</div>
+				<div class="block8_right">
+					<img src="images/block8_left_bg.jpg">
+					<div class="block8_cont">
+						<h3>Растушевка бровей</h3>
+						<p>Татуаж бровей</p>
+						<table>
+							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
+							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
+						</table>
+						<button class="btn center">Записаться</button>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="block8_left">
+					<img src="images/block8_left_bg.jpg">
+					<div class="block8_cont">
+						<h3>Растушевка бровей</h3>
+						<p>Татуаж бровей</p>
+						<table>
+							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
+							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
+						</table>
+						<button class="btn center">Записаться</button>
+					</div>
+				</div>
+				<div class="block8_right">
+					<img src="images/block8_left_bg.jpg">
+					<div class="block8_cont">
+						<h3>Растушевка бровей</h3>
+						<p>Татуаж бровей</p>
+						<table>
+							<tr><td>Мастер</td><td><strong>4000р</strong></td></tr>
+							<tr><td>ТОП-мастер</td><td><strong>7000р</strong></td></tr>
+						</table>
+						<button class="btn center">Записаться</button>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="block9_top"></div>
+		</div>
+		<div class="block9" id="faq">
+			<div class="block9_zag_poloska"></div>
+			<h1>ТОП-9 вопросов по ресницам</h1>
+			<h2>Отвечает Сергия Иваненко, топ-мастер по ресницам</h2>		
+			<div class="block9_container">
+				<div class="block9_left">
+					<div class="vopr">1. Что будет с глазами после снятия?<p>Бла бла бла</p></div>
+					<div class="vopr">2. Можно ли мочить макияж, принимать душ, посещать сауну, плавать в море или бассейне?</div>
+					<div class="vopr">3. Можно ли носить макияж с линзами?</div>
+					<div class="vopr">4. На сколько хватает? Когда делать коррекцию?</div>
+					<div class="vopr">5. Как удалить?</div>
+					<div class="vopr">6. Можно ли красить поверх тушью и помадой?</div>
+					<button class="btn btn-long">Задать вопрос мастеру</button>
+				</div>
+			</div>	
+		</div>
+		<div class="block10">
+			<div class="block10_pl">
+				<div class="block9_bottom"></div>
+				<div class="block10_zag_poloska"></div>
+				<h1>Мы в инстаграмм</h1>	
+				<div class="insta_widgets">
+					<div class="widget1"></div>
+					<div class="widget2"></div>
+					<div class="clear"></div>
+				</div>		
+				<button id="enroll" class="btn center">Записаться</button>
+			</div>
+		</div>
+		<div class="block11" id="contacts">
+			<div class="adr">
+				<h1>Контакты</h1>
+				<p class="cons_p">Бесплатную консультацию можно получить у наших <br>специалистов по телефонам:</p>
+				<div class="footer_phones">
+					<p class="phone1">+7</p><p class="phone1_strong">495</p><p class="phone1_2">104-83-87</p>
+					<p class="phone2">+7 916 657-39-67</p><a href="#"><img src="images/tel_bg.png"></a><a href="#"><img src="images/insta_bg.png"></a>
+				</div>
+				<p class="fiol_big">Звоните!</p>
+				<p class="fiol_small">C 10.00 до 20.00 <span>(Без выходных!)</span></p>
+				<p class="social">Мы в соцсетях: <a href="#"><img src="images/soc_insta.png"></a><a href="#"><img src="images/soc_vk.png"></a><a href="#"><img src="images/soc_fb.png"></a></p>
+				<div class="adr_left">
+					<p>Адрес:</p>
+					<p class="fiol">Москва, Малая Тульская 46</p>
+					<p class="fiol">e-mail: <a href="mailto:beautystudio@evabond.ru">beautystudio@evabond.ru</a></p>
+				</div>
+				<div class="adr_right">
+					<p>Метро:</p>
+					<p class="fiol">Москва, м.Таганская</p>
+					<p class="fiol">3 мин парковка</p>
+				</div>			
+			</div>
+			<div id="map"></div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer">
+			<div class="footer_contaner">
+				<p class="footer_left">Copyright © 2016 EVABOND</p>
+				<p class="footer_right">Дизайн сайта <a href="mailto:Smilla-design@yandex.ru">Smilla-design@yandex.ru</a></p>
+			</div>
+		</div>
+	</div>
+	<!--JS SCRIPTS-->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/my.js" type="text/javascript"></script>
+	<script src="js/jquery.color-2.1.2.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript">
+	   ymaps.ready(init); // карта соберется после загрузки скрипта и элементов
+	   var myMap; // заглобалим переменную карты чтобы можно было ею вертеть из любого места
+	   function init () { // функция - собиралка карты и фигни
+	       myMap = new ymaps.Map("map", { // создаем и присваиваем глобальной переменной карту и суем её в див с id="map"
+	            center: [55.7065, 37.6210], // ну тут центр
+	            behaviors: ['default', 'scrollZoom'], // скроллинг колесом
+	            zoom: 16 // тут масштаб
+	       });
+	       myMap.controls // добавим всяких кнопок, в скобках их позиции в блоке
+
+	        myPlacemark0 = new ymaps.Placemark([55.7052,37.6210], { // Создаем метку с такими координатами и суем в переменную
+			        balloonContent: 'Заголовок метки 1Немного инфы о том, о сем. Лорем ипсум чото там.' // сдесь содержимое балуна в формате html, все стили в css
+				}, {
+				iconImageHref: 'images/map_bal.png', // картинка иконки
+				iconImageSize: [97, 110],
+				iconImageOffset: [-40, -90]
+			});
+			/* Добавляем метки на карту */
+			myMap.geoObjects.add(myPlacemark0);	    
+	        }        
+	</script>
+</body>
+</html>
