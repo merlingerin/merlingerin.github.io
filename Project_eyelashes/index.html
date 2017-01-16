@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.png" size="32x32" type="image/png">
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="style.css">
@@ -42,7 +43,7 @@
 				<div class="form_zag">Задать вопрос мастеру</div>
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
-				<form action="#" id="modal2_form-1" method="post" requared>
+				<form action="Thanks.php" id="modal2_form-1" method="post" requared>
 					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
 					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
 					<textarea class="inp_oval inp_modal inp_textarea" type="text" name="message" rows="5" placeholder="Ваш вопрос"></textarea>
@@ -58,7 +59,7 @@
 				<div class="form_zag">Заказать звонок</div>
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
-				<form action="" id="modal2_form-1" method="post" requared>
+				<form action="Thanks.php" id="modal2_form-1" method="post" requared>
 					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
 					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
 					<input class="oval_submit inp_modal btn-form" type="submit" value="Заказать">
@@ -73,7 +74,7 @@
 				<div class="form_zag">Забронируйте время</div>
 				<div class="form_body">
 				<span class="form_body-text">консультация бесплатно</span>
-				<form action="" id="modal3_form-1" method="post" requared>
+				<form action="Thanks.php" id="modal3_form-1" method="post" requared>
 					<input class="inp_oval inp_modal" type="text" name="name" placeholder="Ваше имя" requared>
 					<input class="inp_oval inp_modal" type="text" name="tel" placeholder="Ваш телефон" requared>
 					<input class="oval_submit inp_modal btn-form" type="submit" value="Записаться">
@@ -127,7 +128,7 @@
 		</div>
 		<div class="str_top"></div>
 		<div class="header_menu">
-			<div class="header320">
+			<div class="header320 clearfix">
 				<div class="menu_knopka"></div>
 				<div class="telknopka"></div>
 				<div class="metroknopka"></div>
@@ -171,7 +172,7 @@
 					<div class="block1_form">
 						<form id="enroll-header" method="post">
 							<input name="name" class="inp_oval" placeholder="Ваше имя" requared>
-							<input name="phone" class="inp_oval" placeholder="Ваш телефон" requared>
+							<input name="tel" class="inp_oval" placeholder="Ваш телефон" requared>
 							<input type="submit" class="oval_submit btn" value="Записаться">
 						</form>
 					</div>
@@ -196,10 +197,10 @@
 					<div class="block2_left">
 						<ul>
 							<li class="item1">Опыт с 2006 года</li>
-							<li class="item2">Более 80 <br>личных наград</li>
-							<li class="item3">Генеральный судья<br>и организатор<br>чемпионатов</li>
-							<li class="item4">Основатель школы<br>красивого<br>бизнеса Евы Бонд</li>
-							<li class="item5">Обучила более<br>3000<br>мастеров</li>
+							<li class="item2">Более 80 <br> личных наград</li>
+							<li class="item3">Генеральный судья и организатор чемпионатов</li>
+							<li class="item4">Основатель школы красивого бизнеса Евы Бонд</li>
+							<li class="item5">Обучила более 3000 мастеров</li>
 						</ul>
 					</div>
 					<div class="block2_right">
@@ -291,7 +292,7 @@
 					<div class="block4_form">
 						<form id="booking-time-1" method="post">
 							<input name="name" class="inp_oval" placeholder="Ваше имя" requared>
-							<input name="phone" class="inp_oval" placeholder="Ваш телефон" requared>
+							<input name="tel" class="inp_oval" placeholder="Ваш телефон" requared>
 							<input type="submit" class="oval_submit btn" value="Записаться">
 						</form>
 					</div>	
@@ -764,7 +765,7 @@
 					<div class="block7_form">
 						<form id="booking-time-2" method="post">
 							<input name="name" class="inp_oval" placeholder="Ваше имя" requared>
-							<input name="phone" class="inp_oval" placeholder="Ваш телефон" requared>
+							<input name="tel" class="inp_oval" placeholder="Ваш телефон" requared>
 							<input type="submit" class="oval_submit btn" value="Записаться">
 						</form>
 					</div>	
@@ -815,7 +816,7 @@
 						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
-				<div class="block8_right">
+				<div class="block8_right hide-mobile">
 					<img src="images/block8_left_bg.jpg">
 					<div class="block8_cont">
 						<h3>Растушевка бровей</h3>
@@ -828,7 +829,7 @@
 					</div>
 				</div>
 				<div class="clear"></div>
-				<div class="block8_left">
+				<div class="block8_left hide-mobile">
 					<img src="images/block8_left_bg.jpg">
 					<div class="block8_cont">
 						<h3>Растушевка бровей</h3>
@@ -840,7 +841,7 @@
 						<button class="btn center order">Записаться</button>
 					</div>
 				</div>
-				<div class="block8_right">
+				<div class="block8_right hide-mobile">
 					<img src="images/block8_left_bg.jpg">
 					<div class="block8_cont">
 						<h3>Растушевка бровей</h3>
@@ -857,20 +858,22 @@
 			<div class="block9_top"></div>
 		</div>
 		<div class="block9" id="faq">
-			<div class="block9_zag_poloska"></div>
-			<h1>ТОП-9 вопросов по ресницам</h1>
-			<h2>Отвечает Сергия Иваненко, топ-мастер по ресницам</h2>		
-			<div class="block9_container">
-				<div class="block9_left">
-					<div class="vopr">1. Что будет с глазами после снятия?<p>Бла бла бла</p></div>
-					<div class="vopr">2. Можно ли мочить макияж, принимать душ, посещать сауну, плавать в море или бассейне?</div>
-					<div class="vopr">3. Можно ли носить макияж с линзами?</div>
-					<div class="vopr">4. На сколько хватает? Когда делать коррекцию?</div>
-					<div class="vopr">5. Как удалить?</div>
-					<div class="vopr">6. Можно ли красить поверх тушью и помадой?</div>
-					<button class="btn btn-long">Задать вопрос мастеру</button>
+			<div class="container">
+				<div class="block9_zag_poloska"></div>
+				<h1>ТОП-9 вопросов по ресницам</h1>
+				<h2>Отвечает Сергия Иваненко, топ-мастер по ресницам</h2>		
+				<div class="block9_container">
+					<div class="block9_left">
+						<div class="vopr">1. Что будет с глазами после снятия?<p>Бла бла бла</p></div>
+						<div class="vopr">2. Можно ли мочить макияж, принимать душ, посещать сауну, плавать в море или бассейне?</div>
+						<div class="vopr">3. Можно ли носить макияж с линзами?</div>
+						<div class="vopr">4. На сколько хватает? Когда делать коррекцию?</div>
+						<div class="vopr">5. Как удалить?</div>
+						<div class="vopr">6. Можно ли красить поверх тушью и помадой?</div>
+						<button class="btn btn-long">Задать вопрос мастеру</button>
+					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 		<div class="block10">
 			<div class="block10_pl">
@@ -878,7 +881,14 @@
 				<div class="block10_zag_poloska"></div>
 				<h1>Мы в инстаграмм</h1>	
 				<div class="insta_widgets">
-					<div class="widget1"></div>
+					<div class="widget1">
+						<script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script>
+							<!-- VK Widget -->
+							<div id="vk_groups"></div>
+							<script type="text/javascript">
+							VK.Widgets.Group("vk_groups", {mode: 2, width: "532", height: "532"}, 76729270);
+						</script>
+					</div>
 					<div class="widget2"></div>
 					<div class="clear"></div>
 				</div>		
@@ -922,18 +932,19 @@
 	<script src="js/my.js" type="text/javascript"></script>
 	<script src="js/jquery.color-2.1.2.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/slick/slick.min.js"></script>
-<!-- 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script> -->
-<!-- 	<script type="text/javascript">
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript">
 	   ymaps.ready(init); // карта соберется после загрузки скрипта и элементов
 	   var myMap; // заглобалим переменную карты чтобы можно было ею вертеть из любого места
 	   function init () { // функция - собиралка карты и фигни
 	       myMap = new ymaps.Map("map", { // создаем и присваиваем глобальной переменной карту и суем её в див с id="map"
 	            center: [55.7065, 37.6210], // ну тут центр
-	            behaviors: ['default', 'scrollZoom'], // скроллинг колесом
-	            zoom: 16 // тут масштаб
+	            behaviors: ['default', 'scrollZoom', 'disable'], // скроллинг колесом
+	            zoom: 16, // тут масштаб
+
 	       });
 	       myMap.controls // добавим всяких кнопок, в скобках их позиции в блоке
-
+	       myMap.behaviors.disable('scrollZoom');
 	        myPlacemark0 = new ymaps.Placemark([55.7052,37.6210], { // Создаем метку с такими координатами и суем в переменную
 			        balloonContent: 'Заголовок метки 1Немного инфы о том, о сем. Лорем ипсум чото там.' // сдесь содержимое балуна в формате html, все стили в css
 				}, {
@@ -944,6 +955,6 @@
 			/* Добавляем метки на карту */
 			myMap.geoObjects.add(myPlacemark0);	    
 	        }        
-	</script> -->
+	</script>
 </body>
 </html>
