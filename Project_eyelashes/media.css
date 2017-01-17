@@ -595,7 +595,7 @@
 	}
 	.header320 { position: relative; max-width: 100%;}
 	.header320 nav {
-		display: block;
+		display: none;
 		position: absolute;
 		width: 100%;
 		top: 100%;
@@ -625,7 +625,36 @@
 	#modal5 .slick-next, #modal5 .slick-prev {
 		display: none!important;
 	}
-}
+	.modal_tel {
+		display: none;
+		position: absolute;
+		width: 100%;
+		background-color: rgba(129,32,203, 0.9);
+		font-size: 1.5em;
+		line-height: 4em;
+		text-align: center;
+		top: 100%;
+		left: 0;
+	}
+	.modal_tel a {
+		color: white;
+		text-decoration: none;
+	}
+	.modal_metro {
+		display: none;
+		position: absolute;
+		width: 100%;
+		background-color: rgba(129,32,203, 0.9);
+		font-size: 1.5em;
+		line-height: 4em;
+		text-align: center;
+		top: 100%;
+		left: 0;
+	}
+	.modal_metro a {
+		color: white;
+		text-decoration: none;
+	}
 
 @media only screen and (max-width: 568px ) {
 	.block8_left, .block8_right {

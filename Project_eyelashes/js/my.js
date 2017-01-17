@@ -15,6 +15,41 @@
       
     }
      blueasyMenu();
+
+     function telMenu() {
+      var $trigger = $('.telknopka'),
+          $menu = $('.modal_tel');
+      
+      $trigger.click(function() {
+        $(this).next($menu).slideToggle();
+      });
+      
+      $(window).resize(function() {
+        if ($(window).width() > 992){
+          $menu.removeAttr('style');
+        }
+      });
+    }
+     telMenu();
+
+     function metroMenu() {
+      var $trigger = $('.metroknopka'),
+          $menu = $('.modal_metro');
+      
+      $trigger.click(function() {
+        $(this).next($menu).slideToggle();
+      });
+      
+      $(window).resize(function() {
+        if ($(window).width() > 992){
+          $menu.removeAttr('style');
+        }
+      });
+      
+    }
+     metroMenu();
+
+
 	var rab_count = $('.rab_container ul > li').length;
 	var rab_cont_count=$('.rab_container_container').width()/130;
 	var rab_razn=rab_count-rab_cont_count;
@@ -202,6 +237,7 @@
 
 	$('.enroll').click(function(){
 		$('#modal4').stop().fadeIn();
+		$('#modal5').stop().fadeOut();
 	});
 	$('#callback').click(function(){
 		$('#modal3').stop().fadeIn();
@@ -210,6 +246,9 @@
 		$('#modal1').stop().fadeIn();
 	});
 	
+	$('.btn-enroll').click(function(){
+		$('#modal1').stop().fadeIn();
+	});
 	$('.btn-close').click(function(){
 		$('#modal1').stop().fadeOut();
 		$('#modal2').stop().fadeOut();
