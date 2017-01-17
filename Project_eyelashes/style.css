@@ -1627,7 +1627,7 @@ time, mark, audio, video {
 .widget2{
     width: 532px;
     height: 538px;
-    background:url(images/insta_img.jpg);
+    /*background:url(images/insta_img.jpg);*/
     float: right;    
 }
 /*.block10 button{
@@ -1763,7 +1763,9 @@ time, mark, audio, video {
     text-align: right;
 }
 
-
+.pop_thanks {
+    width: 50%;
+}
 /*MODAL2*/
 .form_body { height: 100%; }
 .form_body-text {
@@ -1868,7 +1870,7 @@ textarea{
 .item-img {
     width: 100%;
     height: auto;
-    max-height: 430px;
+    max-height: 330px;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }

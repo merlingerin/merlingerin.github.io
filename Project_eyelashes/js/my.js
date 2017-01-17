@@ -180,7 +180,7 @@
 	   // setting-name: setting-value
 	});
 	//MODAL WINDOWS//
-	$('.block9_left button').click(function(){
+	$('#btn-ask').click(function(){
 		$('#modal2').stop().fadeIn();
 	});
 	$('.btn-close').click(function(){
@@ -210,27 +210,95 @@
 		});
 	});
 
-	//AJAX FORM
-	$("#enroll-header").submit(function() {
+	// AJAX FORM
+	$("#enroll_header").submit(function(e) {
+		e.preventDefault();
 		$.ajax({
 			type: "POST",
 			url: "Thanks.php",
 			data: $(this).serialize()
 		}).done(function() {
 			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#enroll_header").trigger("reset");
 		});
 		return false;
 	});
 
-	$("#modal2_callback").submit(function() {
+	$("#booking-time-1").submit(function(e) {
+		e.preventDefault();
 		$.ajax({
 			type: "POST",
 			url: "Thanks.php",
 			data: $(this).serialize()
 		}).done(function() {
 			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#booking-time-1").trigger("reset");
 		});
 		return false;
 	});
+	$("#modal3_callback").submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "Thanks.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#modal3_callback").trigger("reset");
+		});
+		return false;
+	});
+	$("#modal4_enroll").submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "Thanks.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#modal4_enroll").trigger("reset");
+		});
+		return false;
+	});
+	$("#booking-time-2").submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "Thanks.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#booking-time-2").trigger("reset");
+		});
+		return false;
+	});
+	$("#form_ask").submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "Thanks.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$("#form_ask").trigger("reset");
+		});
+		return false;
+	});
+	
+	// $("#modal2_callback").submit(function(e) {
+	// 	e.preventDefault();
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "Thanks.php",
+	// 		data: $(this).serialize()
+	// 	}).done(function() {
+	// 		// alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+	// 		$('#modal3').stop().fadeOut();
+	// 		$("#modal2_callback").trigger("reset");
+	// 	});
+	// 	return false;
+	// });
+	
+	
 
 });
