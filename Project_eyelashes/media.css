@@ -590,6 +590,30 @@
 	.block9_left .vopr { width: 100%; }
 	.block9_left { padding-right: 15%; }
 	.block9_left button { margin-right: -12%; }
+	.rab_opis .button{
+		width: 60%;
+	}
+	.header320 { position: relative; }
+	.header320 nav {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 100%;
+	}
+	.header320 nav li {
+		list-style: none;
+		text-align: center;
+		line-height: 3em;
+	}
+	.form1 {
+		width: 95%;
+	}
+	#modal5 .form1 {
+		width: 90%;
+	}
+	#modal5 .slick-next, #modal5 .slick-prev {
+		display: none!important;
+	}
 }
 
 @media only screen and (max-width: 568px ) {

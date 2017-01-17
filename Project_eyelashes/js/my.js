@@ -183,9 +183,7 @@
 	$('#btn-ask').click(function(){
 		$('#modal2').stop().fadeIn();
 	});
-	$('.btn-close').click(function(){
-		$('#modal2').stop().fadeOut();
-	});
+
 	$('.enroll').click(function(){
 		$('#modal4').stop().fadeIn();
 	});
@@ -197,6 +195,13 @@
 	});
 	
 	$('.btn-close').click(function(){
+		$('#modal1').stop().fadeOut();
+		$('#modal2').stop().fadeOut();
+		$('#modal3').stop().fadeOut();
+		$('#modal4').stop().fadeOut();
+		$('#modal5').stop().fadeOut();
+	});
+	$('.modal_bg').click(function(){
 		$('#modal1').stop().fadeOut();
 		$('#modal2').stop().fadeOut();
 		$('#modal3').stop().fadeOut();
