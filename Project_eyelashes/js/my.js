@@ -1,4 +1,20 @@
 ﻿$(document).ready(function(){
+	function blueasyMenu() {
+      var $trigger = $('.trigger-nav'),
+          $menu = $('.trigger-victim');
+      
+      $trigger.click(function() {
+        $(this).next($menu).slideToggle();
+      });
+      
+      $(window).resize(function() {
+        if ($(window).width() > 992){
+          $menu.removeAttr('style');
+        }
+      });
+      
+    }
+     blueasyMenu();
 	var rab_count = $('.rab_container ul > li').length;
 	var rab_cont_count=$('.rab_container_container').width()/130;
 	var rab_razn=rab_count-rab_cont_count;
