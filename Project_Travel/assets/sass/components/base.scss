@@ -1,0 +1,54 @@
+//basic tags and general rules
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: 'OpenSans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+    width: 100%;
+}
+
+//list
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+span {
+	font-size: 1em;
+}
+p {
+	font-size: 0.875em;
+	color: $text;
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6,p,span {
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+a:hover {
+	text-decoration: none;
+}
+
+button {
+	padding: 20px;
+	background-color: $blue;
+	font: 700 0.875em 'Relawey', Arial, sans-serif;
+	color: #fff;
+	font-weight: 700;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+

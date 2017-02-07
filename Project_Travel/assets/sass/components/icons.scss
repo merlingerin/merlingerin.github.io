@@ -1,0 +1,107 @@
+.icon-key {
+	display: inline-block;
+	background: url('../img/sprite.png') -181px 0px no-repeat;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+.icon-star {
+	display: inline-block;
+	background: url('../img/star.png') center top repeat;
+	width: 20px;
+	height: 25px;
+}
+
+.icon-star-3 {
+	@extend .icon-star;
+	width: 60px;
+
+}
+.icon-star-5 {
+	@extend .icon-star;
+	width: 100px;
+}
+
+.sprite-img {
+	object-fit: none;
+    object-position: -1060px 0;
+    width: 120px;
+    height: 132px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.sprite-img-1 {
+	@extend .sprite-img;
+    object-position: -924px 0;
+}
+.sprite-img-2 {
+	@extend .sprite-img;
+    object-position: -1059px 0;
+}
+.sprite-img-3 {
+	@extend .sprite-img;
+    object-position: -1195px 0;
+}
+.sprite-img-4 {
+	@extend .sprite-img;
+    object-position: -1330px 0;
+}
+
+
+.sprite-stonsors-1 {
+	object-fit: none;
+    object-position: 1px -215px;
+    width: 100px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+}
+
+.sprite-stonsors-2 {
+	@extend .sprite-stonsors-1;
+    object-position: -100px -210px;
+    margin-left: 16%;
+    width: 50px;
+}
+
+.sprite-stonsors-3 {
+	@extend .sprite-stonsors-1;
+    object-position: -177px -214px;
+    margin-left: 20%;
+}
+
+.sprite-stonsors-4 {
+	@extend .sprite-stonsors-1;
+    object-position: -293px -221px;
+    margin-left: 33%;
+}
+.sprite-stonsors-5 {
+	@extend .sprite-stonsors-1;
+    object-position: -404px -215px;
+    margin-left: 44%;
+}
+.sprite-stonsors-6 {
+	@extend .sprite-stonsors-1;
+    object-position: -506px -214px;
+    margin-left: 52%;
+}
+
+.socials-icon-twitter {
+	display: inline-block;
+	background: url('../img/sprite.png') 0 0 no-repeat;
+	width: 39px;
+	height: 39px;
+}
+.socials-icon-facebook {
+	@extend .socials-icon-twitter;
+	background: url('../img/sprite.png') -59px 0 no-repeat;
+}
+.socials-icon-vk {
+	@extend .socials-icon-twitter;
+	background: url('../img/sprite.png') -118px 0 no-repeat;
+}

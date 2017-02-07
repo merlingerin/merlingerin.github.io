@@ -1,0 +1,156 @@
+
+.content-wrapper { 
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+	}
+.stn-title {
+	text-align: center;
+	font: 700 1.875em 'OpenSans', sans-serif; 
+	line-height: 1.75em;
+	color: #2c2e37;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 3px;
+}
+.stn-title-lt {
+	font: 700 1.25em 'OpenSans', sans-serif; 
+	line-height: 1.75em;
+	color: #2c2e37;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+}
+
+.waves {
+	&:before {
+		content: url('../img/waves.png');
+		width: 120px;
+		display: block;
+		position: absolute;
+		top: -60px;
+		left: 0;
+	}
+}
+
+.waves-ctr {
+	&:before {
+		content: url('../img/waves.png');
+		width: 120px;
+		display: block;
+		position: absolute;
+		top: -60px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+.icon-journal {
+	// background: url('../img/ourJournal/sprite-journal.png')no-repeat;
+	// background-position: 0 0;
+	position: relative;
+	&:after {
+		content: ' ';
+		background: url('../img/sprite.png') right bottom no-repeat;
+		width: 83px;
+		height: 83px;
+		overflow: hidden;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+	}
+}
+
+.icon-journal-2 {
+	@extend .icon-journal;
+	background-position: -405px 0;
+	&:after {
+    	background-position: -1170px -165px;
+	}
+}
+
+.icon-journal-3 {
+	@extend .icon-journal;
+	background-position: -810px 0;
+	&:after {
+		background-position: -1265px -170px;
+	}
+}
+
+.stn-btn {
+	padding: 23px 76px;
+	border-radius: 5px;
+	font: 700 0.875em 'Relawey', Arial, sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.contacts_form {
+	input[type^="text"] {
+		display: block;
+	}
+}
+
+
+.blur {
+    z-index: 99; /* изображение размыто */
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+    filter: url('assets/img/blur.svg#blur'); /* путь к svg */
+}
+
+.btn-submit {
+	padding: 20px 0;
+	background-color: $blue;
+	font: 700 0.875em 'Relawey', Arial, sans-serif;
+	color: #fff;
+	font-weight: 700;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    padding-bottom: 9%;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+		background-color: #2099d6;
+	}
+}
+
+.menu-trigger {
+	display: none;
+	border: 3px solid transparent;
+	letter-spacing: 3px;
+	transition: all 0.2s ease-in-out;
+}
+.menu-trigger:hover {
+	background-color: transparent;
+	border: 3px solid $blue;
+	color: $blue;
+}
+.emulated-menu {
+	width: 100%;
+	height: 56px;
+}
+
+.header_btn:hover {
+	color: #ffffff;
+	background-color: $blue;
+}
+
+.animationLeft {
+	@extend .wow;
+	@extend .fadeInLeft;
+	
+}
+.animationRight {
+	@extend .fadeInRight;
+	@extend .wow;
+}
