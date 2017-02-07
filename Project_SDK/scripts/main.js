@@ -44,7 +44,7 @@ $(function(){
 		    }
 
 		}//check window size
-		else if ( windowSize < 480 ) {
+		else if ( windowSize < 737 ) {
 			var secBar = $('.sec-counter').next();
 
 			secBar.addClass('hide');

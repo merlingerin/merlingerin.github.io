@@ -15,12 +15,19 @@ $(document).ready(function() {
           $menu.removeAttr('style');
         }
       });
-      $menu.mouseleave(function(){
-        function menuHide() {
-          $menu.fadeOut(700)
-        };
-        setTimeout(menuHide, 1500);
+
+
+      $(window).resize(function() {
+        if ($(window).width() < 992){
+          $menu.mouseleave(function(){
+            function menuHide() {
+              $menu.fadeOut(700)
+            };
+            setTimeout(menuHide, 1500);
+          });
+        }
       });
+      
     }
      mobileMenu();
 

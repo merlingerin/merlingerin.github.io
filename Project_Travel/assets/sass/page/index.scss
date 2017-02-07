@@ -775,11 +775,14 @@
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	.stn-title { margin-top: 5%; }
 	.btn-table {
-		display: none;
+		display: block;
+		width: 50%;
+		margin-left: 25%;
 	}
+	.trigger-victim { left: 0; }
 	.header_btn { display: none; }
 	.header-hero .hero_btn {
 	    padding: 3% 10%;
