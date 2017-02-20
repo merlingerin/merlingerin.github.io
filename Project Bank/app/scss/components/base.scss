@@ -1,0 +1,26 @@
+//basic tags and general rules
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24/16;
+    overflow-x: hidden;
+}
+
+//list
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+	width: 100%;
+    height: auto;
+}
+
+input {
+	outline: none;
+}
+textarea {
+	outline: none;
+}
