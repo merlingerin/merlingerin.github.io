@@ -1,0 +1,26 @@
+.item.checked .title {
+    color: #ddd;
+    text-decoration: line-through;
+}
+.item {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.item-checkbox .checkbox {
+    width: 43px;
+}
+span {
+    display: block;
+    line-height: 3.5em;
+}
+i {
+    z-index: 10;
+}
+.red-text {
+    color: #ff3d3d;
+}
+
+textarea, input[type="text"] {
+    height: 50px;
+    font-size: 16px;
+}
