@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/31b7c287ed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body  ng-app="myApp" ng-controller="myCtrl">
+    <ion-pane>
+      <ion-header-bar class="bar bar-header bar-calm">
+        <h1 class="title">Kos app</h1>
+      </ion-header-bar>
+      <ion-content>
+        <h1 class="center">Задайте входные данные</h1>
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label col">Мощность P:</span>
+            <select name="power" ng-model="input.power">
+              <option value="5" selected>5</option>
+              <option value="6.5">6.5</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+              <option value="3.5">3.5</option>
+              <option value="9">9</option>
+              <option value="16">16</option>
+            </select><span class="kvt"> [кВт]</span>
+            <input class="col col-33" type="text" placeholder="0 кВт" ng-model="input.power">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label col">Количество квартир:</span>
+            <input class="col col-33" type="text" placeholder="0 Квартир" ng-model="input.flatVal">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label col col-33">Результат:</span>
+            <h2 class="alignLeft col center">Розраховане значення показника, кВт/житло: </h2><h2>{{result1}} кВт</h2>
+            <h2 class="alignLeft col center">Потужнiсть необхiдна для {{input.flatVal}}: </h2><h2>{{result2}} кВт</h2>
+          </label>
+        </div>
+        <button class="button button-calm col col-50 col-offset-25" ng-click="findMin(input.flatVal); findRow(input.power); interpolation(powerRow, flatMin);">
+          Расчитать
+        </button>
+        <div class="table_wrapper" ng-init="table()"></div>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

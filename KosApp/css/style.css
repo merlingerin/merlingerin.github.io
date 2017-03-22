@@ -1,0 +1,28 @@
+/* Empty. Add your own CSS if you like */
+
+h1 {
+    text-align: center;
+}
+.item-stacked-label {
+    text-align: center;
+}
+input[type^="text"] {
+    text-align: center;
+    margin: 0 auto;
+}
+.alignLeft {
+    text-align: left;
+}
+.center {
+    margin: 0 auto;
+}
+.right {
+    float: right;
+}
+.table_wrapper {
+    display: none;
+}
+select, .kvt {
+    display: inline-block;
+    vertical-align: bottom;
+}
