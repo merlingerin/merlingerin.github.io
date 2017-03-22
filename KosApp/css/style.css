@@ -4,7 +4,16 @@
     background-size: cover;
 }
 .content33 {
-    width: 30%;
+    width: 38%;
+    background-color: rgba(255,255,255,0.7);
+    height: 70%;
+    border: 8px solid rgba(0,0,0,0.4);
+    border-radius: 15px;
+    margin-top: 10%;
+    margin: 0 auto;
+    padding-top: 3%;
+    box-shadow: 10px 15px 20px rgba(0,0,0,0.6);
+    margin-top: 10%;
 }
 h1 {
     text-align: center;
