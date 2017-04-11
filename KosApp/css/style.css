@@ -41,3 +41,12 @@ select, .kvt {
     display: inline-block;
     vertical-align: bottom;
 }
+@media screnn and ( max-width: 1024px ) {
+    .content33 { width: 50%; } 
+}
+@media screnn and ( max-width: 980px ) {
+    .content33 { width: 70%; } 
+}
+@media screnn and ( max-width: 736px ) {
+    .content33 { width: 90%; } 
+}
