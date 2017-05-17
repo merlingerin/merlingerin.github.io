@@ -1,7 +1,7 @@
 /* Empty. Add your own CSS if you like */
 .pane {
-    background-image: url("../img/K5OCTxi0sag.jpg");
     background-size: cover;
+    background: url('/img/blue_bg.jpg');
 }
 .content33 {
     width: 38%;
@@ -40,4 +40,13 @@ input[type^="text"] {
 select, .kvt {
     display: inline-block;
     vertical-align: bottom;
+}
+@media screnn and ( max-width: 1024px ) {
+    .content33 { width: 50%; } 
+}
+@media screnn and ( max-width: 980px ) {
+    .content33 { width: 70%; } 
+}
+@media screnn and ( max-width: 736px ) {
+    .content33 { width: 90%; } 
 }
