@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Star Clothes</title>
+	<!-- <link rel="icon" href="assets/images/favico/favicon.png" type="image/png" sizes="32x32"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!--[if lt IE 10]>
+	<link rel="stylesheet" href="assets/css/ie.css">
+	<![endif]-->
+</head>
+
+
+<body>
+	<div id="page-wrapper">
+		<header>
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<ul class="header__informations">
+							<li><a href="javascript:void(0)">Help</a></li>
+							<li><a href="javascript:void(0)">Contact</a></li>
+							<li><a href="javascript:void(0)">Delivery Information</a></li>
+							<li><i class="icon-phone"></i><a href="tel:123 456 78 90">Call us : 123 456 78 90</a></li>
+						</ul>
+						<!-- /.header__list -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.header-top -->
+			<div class="container">
+				<div class="row">
+					<div class="header__content">
+						<div class="header__logo logo">
+							<a href="logo__link"><img src="./images/logo.png" alt="logo"></a>
+						</div>
+						<div class="header__pannel left">
+							<a href="" class="btn__login">Login</a>
+							<a href="" class="btn__register">Register</a>
+							<div class="cart">
+								<a href="javascript:void(0)"><i class="ico-cart"></i><span class="cart__info">My Cart ( {{cart.totalItems}} ) : ${{cart.totalPrice}}</span></a>
+								<a href="javascript:void(0)" class="btn__cart btn__black">checkout</a>
+							</div>
+							<p class="search">
+								<button class="icon-search"></button><input class="input-search" type="text" placeholder="Search" autofocus>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<nav class="header__nav clearfix">
+						<span id="nav-trigger"></span>
+						<ul class="nav__list">
+							<li class="nav__item"><a href="javascript:void(0)">Home</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">New Arrivals</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">Tuxedo</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">Sweater</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">Shoes</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">Glasses</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">T-shirt</a></li>
+							<li class="nav__item"><a href="javascript:void(0)">watches</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="stn-carusel">
+			<div class="container">
+				<div class="row">
+					<div class="owl-carousel owl-theme">
+						<div class="item slide_1">
+							<img src="./images/header-bg.jpg" alt="model" class="item__img">
+							<div class="slide__container">
+								<div class="sale__ad">
+									<div class="sale__inner">
+										<p class="sale_top">Mid-Season</p>
+										<h3>sale</h3>
+										<p class="sale__middle"><span>up to</span></p>
+										<p class="sale__bottom">50 % off</p>
+									</div>
+								</div>
+								<a href="" class="btn__shop btn__black">shop now</a>
+							</div>
+						</div>
+						<div class="item slide_2">
+							<img src="./images/header-bg.jpg" alt="model" class="item__img">							
+							<div class="slide__container">
+								<div class="sale__ad">
+									<div class="sale__inner">
+										<p class="sale_top">mid-sale</p>
+										<h3>sale</h3>
+										<p class="sale__middle"><span>up to</span></p>
+										<p class="sale__bottom">50 % off</p>
+									</div>
+								</div>
+								<a href="" class="btn__shop btn__black">shop now</a>
+							</div>
+						</div>
+						<div class="item slide_3">
+							<img src="./images/header-bg.jpg" alt="model" class="item__img">
+							<div class="slide__container">
+								<div class="sale__ad">
+									<div class="sale__inner">
+										<p class="sale_top">mid-sale</p>
+										<h3>sale</h3>
+										<p class="sale__middle"><span>up to</span></p>
+										<p class="sale__bottom">50 % off</p>
+									</div>
+								</div>
+								<a href="" class="btn__shop btn__black">shop now</a>
+							</div>
+						</div>
+						<div class="item slide_4">
+							<img src="./images/header-bg.jpg" alt="model" class="item__img">
+							<div class="slide__container">
+								<div class="sale__ad">
+									<div class="sale__inner">
+										<p class="sale_top">mid-sale</p>
+										<h3>sale</h3>
+										<p class="sale__middle"><span>up to</span></p>
+										<p class="sale__bottom">50 % off</p>
+									</div>
+								</div>
+								<a href="" class="btn__shop  btn__black">shop now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.stn-carusel -->
+		<section class="stn-clothes">
+			<div class="container">
+				<div class="row">
+					<h4 class="stn__title">New Arrivals</h4>
+					<div id="showcase">
+						<div v-for="(cloth, index) in clothes" class="showcase__card">
+							<div class="card__header">
+								<img :src="cloth.img" alt="clothes" class="card__img">
+							</div>
+							<div class="card__props">
+								<h5 class="card__title">{{cloth.name}}</h5>
+								<!-- /.card__title -->
+								<p class="price"><span v-if="cloth.oldPrice !== ''" class="oldPrice">{{cloth.oldPrice}}</span><span :class="{newPrice: cloth.oldPrice !== '' }">$ {{cloth.newPrice}}</span></p>
+								<!-- /.price -->
+								<!-- /.size -->
+							</div>
+							<div class="card__footer">
+								<p class="size">
+									<span class="size__text">Size: </span>
+									<button v-for="(size, index) in cloth.sizes" :class="{active : cloth.currentSize === index}" @click="cloth.currentSize = index, pickedSize(index)" class="size__values" :value="size">{{size}}</button>
+								</p>
+								<button class="btn-buy btn__black" @click="pickedItem(index), addToCard(index)">Buy</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- /.stn-clothes -->
+		<section class="stn-brands">
+			<div class="container">
+				<div class="row">
+					<h4 class="stn__title">Brands</h4>
+					<div class="brands">
+						<div class="brands__item" v-for="brand in brands"><img :src="brand.path" :alt="brand.name" class="brand__img"></div>
+						<!-- /.brands__item -->
+					</div>
+					<!-- /.brands -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.stn-brands -->
+		<section class="stn-slider">
+
+					<div class="side__wrapper clearfix">
+						<div class="stn__leftside">
+							<img src="./images/model.jpg" alt="model" class="stn__model-img">
+						</div>
+						<!-- /.stn__leftside -->
+						<div class="stn_rightside">
+							<div class="carousel_1">
+								<div class="slider__item">
+									<div class="slider__header"><img src="./images/skirt.jpg" alt="skirt" class="slider__img slider__img1"></div>
+									<div class="slider__props">
+										<h4 class="slider__title">Skirt Diesel</h4>
+										<!-- /.slider__title -->
+										<div class="slider__price">$ 5 520</div>
+										<!-- /.slider__price -->
+									</div>
+									<!-- /.slider__props -->
+								</div>
+								<div class="slider__item">
+										<div class="slider__header"><img src="./images/skirt.jpg" alt="skirt" class="slider__img slider__img1"></div>								<div class="slider__props">
+										<h4 class="slider__title">Skirt Diesel</h4>
+										<!-- /.slider__title -->
+										<div class="slider__price">$ 5 520</div>
+										<!-- /.slider__price -->
+									</div>
+									<!-- /.slider__props -->
+								</div>
+								<div class="slider__item">
+									<div class="slider__header"><img src="./images/skirt.jpg" alt="skirt" class="slider__img slider__img1"></div>
+									<div class="slider__props">
+										<h4 class="slider__title">Skirt Diesel</h4>
+										<!-- /.slider__title -->
+										<div class="slider__price">$ 5 520</div>
+										<!-- /.slider__price -->
+									</div>
+									<!-- /.slider__props -->
+								</div>
+								<div class="slider__item">
+									<div class="slider__header"><img src="./images/skirt.jpg" alt="skirt" class="slider__img slider__img1"></div>
+									<div class="slider__props">
+										<h4 class="slider__title">Skirt Diesel</h4>
+										<!-- /.slider__title -->
+										<div class="slider__price">$ 5 520</div>
+										<!-- /.slider__price -->
+									</div>
+									<!-- /.slider__props -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.stn_rightside -->
+
+		</section>
+		<!-- /.stn-slider -->
+		<section class="stn-news">
+			<div class="container">
+				<div class="row">
+					<h4 class="stn__title">News</h4>
+					<div class="news__posts">
+						<div class="news__post" v-for="post in posts">
+							<div class="post__img"><img :src="post.img" alt="post"></div>
+							<div class="post__body">
+								<ul class="post__info">
+									<li class="post__writer"><i class="ico-pencil"></i><span>{{post.writer}}</span></li>
+									<li class="post__date"><i class="ico-celendar"></i><span>{{post.date}}</span></li>
+								</ul>
+								<h5 class="post__title">{{post.title}}</h5>
+								<p class="post__text">{{post.text}}</p>
+							</div>
+							<div class="post__btn btn__black">
+								<a href="javascript:void(0)" class="post__more">learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="stn-form">
+			<div class="container">
+				<div class="row">
+					<h4 class="stn__title">Contact us</h4>
+					<div class="contact__form">
+						<form id="contact-form" action="">
+							<div class="form__wrapper">
+								<input id="Fname" name="Fname" type="text" class="form__name" placeholder="*NAME" required>
+								<input id="Fsurname" name="Fsurname" type="text" class="form__surname" placeholder="*SURNAME" required>
+								<input id="Femail" name="Femail" type="text" class="form__email" placeholder="*EMAIl" required>
+								<textarea id="Fmessage" class="form__message" placeholder="MESSAGE"></textarea>
+								<ul class="checkbox__wrapper">
+									<li>
+										<p class="checkbox-agree_wr">
+											<input type="checkbox" id="checkbox-agree" value="I agree">
+											<label class='label-checkbox' for="checkbox-agree"></label>
+										</p>
+										<span class="checkbox-trigger">I Agree</span>
+									</li>
+									<li>
+										<p class="checkbox-send_wr">
+											<input type="checkbox" id="checkbox-send" value="Send Me">
+											<label class='label-checkbox' for="checkbox-send"></label>
+										</p>
+										<span class="checkbox-trigger">Send me news</span>
+									</li>
+								</ul>
+								<p class="form__btn">
+									<input type="submit" class="form__submit btn__black" value="SEND">
+								</p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer__widgets">
+						<div class="footer__widget footer__shop">
+							<h4 class="widget__title">SHOPS</h4>
+							<ul class="widget__list">
+								<li><a href="javascript:void(0)">New In</a></li>
+								<li><a href="javascript:void(0)">Women</a></li>
+								<li><a href="javascript:void(0)">Men</a></li>
+								<li><a href="javascript:void(0)">Shoes</a></li>
+								<li><a href="javascript:void(0)">Bags & Accessories</a></li>
+								<li><a href="javascript:void(0)">Top Brands</a></li>
+								<li><a href="javascript:void(0)">Sale & Special Offers</a></li>
+								<li><a href="javascript:void(0)">Lookbook</a></li>
+							</ul>
+						</div>
+						<!-- /.footer__widget footer__shop -->
+						<div class="footer__widget footer__info">
+							<h4 class="widget__title">INFORMATION</h4>
+							<ul class="widget__list">
+								<li><a href="javascript:void(0)">About us</a></li>
+								<li><a href="javascript:void(0)">Customer Service</a></li>
+								<li><a href="javascript:void(0)">New Collection</a></li>
+								<li><a href="javascript:void(0)">Best Sellers</a></li>
+								<li><a href="javascript:void(0)">Manufacturers</a></li>
+								<li><a href="javascript:void(0)">Privacy policy</a></li>
+								<li><a href="javascript:void(0)">Terms & condition</a></li>
+								<li><a href="javascript:void(0)">Blog</a></li>
+							</ul>
+						</div>
+						<!-- /.footer__widget footer__info -->
+						<div class="footer__widget footer__services">
+							<h4 class="widget__title">CUSTOMER SERVICE</h4>
+							<ul class="widget__list">
+								<li><a href="javascript:void(0)">Search Terms</a></li>
+								<li><a href="javascript:void(0)">Advanced Search</a></li>
+								<li><a href="javascript:void(0)">Orders and Returns</a></li>
+								<li><a href="javascript:void(0)">Contact Us</a></li>
+								<li><a href="javascript:void(0)">RSS</a></li>
+								<li><a href="javascript:void(0)">Help & FAQs</a></li>
+								<li><a href="javascript:void(0)">Consultant</a></li>
+								<li><a href="javascript:void(0)">Store Locations</a></li>
+							</ul>
+						</div>
+						<!-- /.footer__widget footer__services -->
+						<div class="footer__widget footer__connect">
+							<h4 class="widget__title">STAY CONNECTED</h4>
+							<div class="connect__socials">
+								<ul class="socials__list">
+									<li><a href="javascript:void(0)"><i class="icon-facebook"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="icon-twitter"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="icon-pinterest"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="icon-instagram"></i></a></li>
+									<li><a href="javascript:void(0)"><i class="icon-rss"></i></a></li>
+								</ul>
+								<!-- /.socials__list -->
+							</div>
+							<!-- /.connect__socials -->
+							<div class="connect__subscribe">
+								<p class="subscribe__text">subscribe <span>in</span> our news letter</p>
+								<!-- /.subscribe__text -->
+								<p class="subscribe__input">
+										<input id="subEmail" name="emailSubscribe" type="text" placeholder="Enter Your Email Address" required>
+										<input id="subbtn" type="submit" value="SUBSCRIBE">
+								</p>
+								<!-- /.subscribe__input -->
+							</div>
+							<!-- /.connect__subscribe -->
+						</div>
+						<!-- /.footer__widget footer__connect -->
+						<a href="javascript:void(0)" id="slid-up"><i class="icon-chevron-thin-up"></i></a>						
+					</div>
+					<!-- /.footer__widgets -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</footer>
+		<!-- /#footer -->
+	</div>
+	<!-- /.page-wrapper -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="./js/vue.min.js"></script>
+
+	
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
