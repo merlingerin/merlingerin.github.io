@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Images Gallery</title>
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <div class="preloader__container">
+            <div class="preloader__image"></div>
+            <p class="preloader__text">Loading...</p>
+        </div>  
+    </div>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">
+                Image view
+            </h1>
+        </div>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <script src="./src/js/app.js"></script>
+        <script src="./src/js/lightbox.js"></script>
+        <script src="./src/js/main.js"></script>
+    </header>
+    <main class="main">
+        <section class="content">
+            <div class="container">
+                <div class="gallery">
+                    <div class="gallery__images">
+                        <div class="spinner">Loading...</div>
+                    </div>
+                    <div class="gallery__paggination">
+                        <ul class="paggination__list">
+                            <li class="paggination__item">
+                                <a class="paggination__link link--prev" href="#" data-action="decreasPage"><< Prev</a>
+                            </li>
+                            <li class="paggination__item">
+                                <span class="paggination__page page-number"> [ 1 ] </span>
+                            </li>
+                            <li class="paggination__item">
+                                <a class="paggination__link link--next" href="#" data-action="increasPage">Next >></a>
+                            </li>
+                        </ul>
+                    </div>     
+                </div>
+                <!-- Gallery -->
+            </div>
+        </section>
+        <!-- Section -->
+        <aside class="sidebar-filters">
+            <div class="sidebar__container">
+                <div class="sidebar__title"><span>Filter by<span></div>
+                <div class="filters__item--size">
+                    <span class="filter__title">Size</span>
+                    <div class="filter__body">
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <a href="#" class="filter__link active" data-action="getLargePhoto">Large</a>
+                            </li>
+                            <li class="filter__item">
+                                <a href="#" class="filter__link" data-action="getMiddlePhoto">Medium</a>
+                            </li>
+                            <li class="filter__item">
+                                <a href="#" class="filter__link" data-action="getSmallPhoto">Small</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Size filter -->
+                <div class="filters__item--author">
+                    <span class="filter__title">Author</span>
+                    <div class="filter__body">
+                        <input id="inputSearch" type="text" class="filter__input" placeholder="Author...">
+                    </div>
+                </div>
+                <!-- Author filter -->
+            </div>
+        </aside>
+        <div id="lightbox" class="lightbox">
+            <div id="lightbox__container" class="lightbox__container">
+                <div class="lighbox-image__container">
+                    <span id="lightbox__close" class="lightbox__close">&times;</span>
+                    <img id="lighbox-image" src="./src/img/lightbox-loader.svg" alt="lighbox-image">
+                    <span class="lightbox__controlls lightbox__controlls--prev"></span>
+                    <span class="lightbox__controlls lightbox__controlls--next"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main -->
+    <footer class="footer">
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
