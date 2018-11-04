@@ -14,17 +14,20 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
-    <link rel="stylesheet" href="/styles/jBox.min.css">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/animate.css">
+    <link rel="stylesheet" href="/scripts/jbox/jBox.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
     <script src="/scripts/jbox/jBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 </head>
 
@@ -35,8 +38,27 @@
         <div class="preloader-body">
             <div id="logo__link" class="logo__link">
                 <span id="logo__decoration" class="logo__decoration logo__decoration--before"></span>
-                <!-- <span class="logo__decoration--after"></span> -->
             </div>
+        </div>
+    </div>
+    <div id="menu" class="menu">
+        <div class="menu__header">
+            <div class="logo">
+                <a href="/" class="logo__link"></a>
+                <span class="logo__text">Нутриенты для здоровой<br>и
+                    свободной жизни
+                </span>
+            </div>
+            <i id="menu-close" class="menu__close-button fas fa-times"></i>
+        </div>
+        <div id="menu-close" class="menu__content">
+            <ul class="menu__list">
+                <li class="list__item"><a class="title_2" href="javascript:void(0)">ГЛАВНАЯ</a></li>
+                <li class="list__item"><a class="title_2" href="javascript:void(0)">GREEN COFFEE POLYPHENOL</a></li>
+                <li class="list__item"><a class="title_2" href="javascript:void(0)">ОСНОВНЫЕ ОСОБЕННОСТИ</a></li>
+                <li class="list__item"><a class="title_2" href="javascript:void(0)">ЗАДАТЬ ВОПРОС</a></li>
+                <li class="list__item"><a class="title_2" href="javascript:void(0)">КОНТАКТЫ</a></li>
+            </ul>
         </div>
     </div>
     <div class="swiper-container">
@@ -56,13 +78,13 @@
                         <a href="#" class="button  button__to-order button--green"><span class="button__text">заказать</span></a>
                         <a href="#" class="facebook-link"><i class="facebook-link__icon fab fa-facebook-f"></i></a>
                         <a href="tel:+380445375280" class="tel-number"><span class="tel-number__text">8 096 455 55 55</span></a>
-                        <div class="menu">
-                            <span class="menu__text">Menu</span>
-                            <i class="menu__icon"></i>
+                        <div id="menu-open" class="menu-button">
+                            <span class="menu-button__text">Menu</span>
+                            <i class="menu-button__icon"></i>
                         </div>
                     </div>
                     <div class="hero">
-                        <h1 id="hero-title" class="hero__title title_1">
+                        <h1 id="hero-title" class="hero__title title_1 ">
                             Контроль<br>
                             над весом<br>
                             с пользой<br>
@@ -71,20 +93,20 @@
                     <div class="sidebar">
                         <div class="card card--1">
                             <p class="card__number">01</p>
-                            <p class="card__description paragraph_1">Безопасное
+                            <p class="card__description paragraph_2">Безопасное
                                 управление
                                 своим весом</p>
                         </div>
                         <div class="card card--2">
                             <p class="card__number">02</p>
-                            <p class="card__description paragraph_1">Клинически
+                            <p class="card__description paragraph_2">Клинически
                                 тестированный
                                 результат
                             </p>
                         </div>
                         <div class="card card--3">
                             <p class="card__number">03</p>
-                            <p class="card__description paragraph_1">На основе
+                            <p class="card__description paragraph_2">На основе
                                 натурального
                                 экстракта зеленого
                                 кофе</p>
@@ -98,7 +120,7 @@
             <section class="swiper-slide section_2">
                 <div class="container">
                     <div class="section_2__left-side">
-                        <h2 class="section_2__title title_1">
+                        <h2 class="section_2__title title_1 text-decor--rotated ml12">
                             Green Coffee Polyphenol
                         </h2>
                         <p class="section_2__paragraph paragraph_1">
@@ -150,8 +172,8 @@
             <section class="swiper-slide section_4">
                 <div class="container">
                     <div class="section_4__left-side">
-                        <h3 class="section_4__title title_1">
-                            <span class="text__black title-stroke">сновные</span><span class="text__green title-stroke">особенности</span>
+                        <h3 class="section_4__title title_1 text-decor--rotated">
+                            <span class="text__black title-stroke">основные</span><span class="text__green title-stroke">особенности</span>
                         </h3>
                         <i class="section_4__decor"></i>
                     </div>
@@ -163,8 +185,22 @@
                                     подтвержденная
                                     эффективность
                                 </p>
+                                <p class="card-content__card-description paragraph_3">
+                                    Наш продукт произведен из экстракта натурального зеленого кофе, и
+                                    сертифицирован
+                                    согласно действующим европейским нормам.
+                                    Благодаря особому сбалансированному набору хлорогеновых кислот в составе,
+                                    препарат
+                                    считается, пожалуй, единственной современной биодобавкой, эффективность которой
+                                    подтверждена на уровне европейских научных и клинических исследований.
+
+                                </p>
                                 <i class="card-content__card-arrow icon-right-open"></i>
                             </div>
+                            <div class="card__image">
+                                <img src="/images/section_4/1.png" alt="">
+                            </div>
+
 
                         </div>
                         <div class="card card-2">
@@ -172,18 +208,32 @@
                                 <i class="card-content__card-number paragraph_2">02</i>
                                 <p class="card-content__card-title title_3">Польза
                                     без фармакологии</p>
+                                <p class="card-content__card-description paragraph_3">
+                                    В не обжаренных кофейных зернах содержится более 2 тысяч активных компонентов,
+                                    которые помогают расщеплять жиры и перерабатывать жирные кислоты, ускоряют обмен
+                                    веществ и притупляют сильное чувство голода. При этом, в отличие от многих аптечных
+                                    препаратов, кофе абсолютно безвреден для клеток, внутренних органов
+                                </p>
                                 <i class="card-content__card-arrow icon-right-open"></i>
                             </div>
-
+                            <div class="card__image">
+                                <img src="/images/section_4/2.png" alt="">
+                            </div>
                         </div>
                         <div class="card card-3">
                             <div class="card__card-content card-content">
                                 <i class="card-content__card-number paragraph_2">03</i>
                                 <p class="card-content__card-title title_3">100%
                                     натуральность</p>
+                                <p class="card-content__card-description paragraph_3">
+                                    Благодаря своему уникальному составу препарат позволяет снизить вес на 3-5 кг
+                                    практически не изменяя режима питания.
+                                </p>
                                 <i class="card-content__card-arrow icon-right-open"></i>
                             </div>
-
+                            <div class="card__image">
+                                <img src="/images/section_4/3.png" alt="">
+                            </div>
                         </div>
                         <div class="card card-4">
                             <div class="card__card-content card-content">
@@ -191,9 +241,18 @@
                                 <p class="card-content__card-title title_3">Минимум
                                     кофеина
                                 </p>
+                                <p class="card-content__card-description paragraph_3">В процессе производства, зерна
+                                    Робусты
+                                    очищаются от кофеина – его конечное количество не превышает 2%. Биодобавка не
+                                    вызывает побочных эффектов в виде повышенного давления, учащенного сердечного ритма
+                                    и возбужденности. Сырье, которое мы выбираем, содержит минимум дитерпенов –
+                                    молекул, повышающих уровень холестерина. Результат - возможность управлять
+                                    собственным весом, не рискуя здоровьем!</p>
                                 <i class="card-content__card-arrow icon-right-open"></i>
                             </div>
-
+                            <div class="card__image">
+                                <img src="/images/section_4/4.png" alt="">
+                            </div>
                         </div>
                         <div class="card card-5">
                             <div class="card__card-content card-content">
@@ -201,9 +260,18 @@
                                 <p class="card-content__card-title title_3">Хлорогеновая
                                     кислота
                                 </p>
+                                <p class="card-content__card-description paragraph_2">Зеленый кофе – рекордсмен по
+                                    содержанию
+                                    хлорогеновой кислоты. Это мощный антиоксидант растительного происхождения, который
+                                    предотвращает старение клеток, сокращает выброс глюкозы в кровь и снижает риск
+                                    развития диабета. Вы будете худеть, не внося при этом никаких изменений в привычный
+                                    образ жизни! Ну, а бонусом станет прилив сил, хорошее настроение и уверенность в
+                                    себе. Препарат не вызывает привыкания.</p>
                                 <i class="card-content__card-arrow icon-right-open"></i>
                             </div>
-
+                            <div class="card__image">
+                                <img src="/images/section_4/5.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,7 +281,7 @@
             <section class=" swiper-slide section_5">
                 <div class="container">
                     <div class="hero">
-                        <h3 class="section_5__paragraph hero__title title_2">
+                        <h3 class="section_5__paragraph hero__title title_2  text-decor--rotated">
                             ЗАДАТЬ ЛЮБОЙ ВОПРОС
                             ОБ ИННОВАЦИОННОМ ПРОДУКТЕ МОЖНО
                             ПРЯМО СЕЙЧАС
@@ -250,11 +318,15 @@
             </div>
             <!-- Section #7 -->
             <div id="section-map" class="swiper-slide section_7 ">
+                <img src="/images/map/map.png" alt="">
             </div>
         </div>
     </div>
-    <!-- <script src="/scripts/src/main.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="/scripts/main.js"></script>
     <script>
+
         const swiper = new Swiper('.swiper-container', {
             freeMode: true,
             setWrapperSize: true,
@@ -271,9 +343,7 @@
                     direction: 'vertical'
                 }
             }
-        });
-
-        swiper.on('resize', function () { mySwiper.update() })
+        })
 
         // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
         let vh = window.innerHeight * 0.01;
@@ -282,6 +352,7 @@
 
         // We listen to the resize event
         window.addEventListener('resize', () => {
+            swiper.update();
             // We execute the same script as before
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -291,43 +362,45 @@
             title: 'Заполните форму и мы свяжемся с вами',
             content: '<div class="modal__content"><form action="#" id="modal-form" method="post"><input type="text" id="input-name" name="name" placeholder="Имя"><input type="tel" id="input-tel" name="tel" placeholder="Телефон"><input type="submit" value="Отправить"></form></div>',
         });
-        let map;
+        AOS.init();
 
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('section-map'), {
-                center: { lat: 50.4426294, lng: 30.5211416 },
-                zoom: 15.5,
-                mapTypeId: 'roadmap',
-                disableDefaultUI: true
-            });
-        }
+        // let map;
 
-        //Marker image
-        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-        var icons = {
-            parking: {
-                icon: iconBase + 'parking_lot_maps.png'
-            },
-            library: {
-                icon: iconBase + 'library_maps.png'
-            },
-            info: {
-                icon: iconBase + 'info-i_maps.png'
-            }
-        };
-        var features = {
-            position: new google.maps.LatLng(50.4426294, 30.5211416),
-            // type: 'info'
-        }
-        // Create markers.
-        var marker = new google.maps.Marker({
-            position: features.position,
-            // icon: features.type,
-            map: map
-        });
+        // function initMap() {
+        //     map = new google.maps.Map(document.getElementById('section-map'), {
+        //         center: { lat: 50.4426294, lng: 30.5211416 },
+        //         zoom: 15.5,
+        //         mapTypeId: 'roadmap',
+        //         disableDefaultUI: true
+        //     });
+        // }
+
+        // //Marker image
+        // var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        // var icons = {
+        //     parking: {
+        //         icon: iconBase + 'parking_lot_maps.png'
+        //     },
+        //     library: {
+        //         icon: iconBase + 'library_maps.png'
+        //     },
+        //     info: {
+        //         icon: iconBase + 'info-i_maps.png'
+        //     }
+        // };
+        // var features = {
+        //     position: new google.maps.LatLng(50.4426294, 30.5211416),
+        //     // type: 'info'
+        // }
+        // // Create markers.
+        // var marker = new google.maps.Marker({
+        //     position: features.position,
+        //     // icon: features.type,
+        //     map: map
+        // });
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChpXzytPb88C9XEbvCbkO8Zm3QI2viLQw&callback=initMap"
-        async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChpXzytPb88C9XEbvCbkO8Zm3QI2viLQw&callback=initMap"
+        async defer></script> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
