@@ -310,7 +310,7 @@ i {
   display: none;
 }
 .jBox-overlay {
-  cursor: url(./images/Webp.net-resizeimage.png), auto;
+  cursor: url(../images/Webp.net-resizeimage.png), auto;
 }
 .swiper-slide.activated .text-decor--rotated:after {
   opacity: 1;
@@ -322,7 +322,7 @@ i {
   left: -6.38298vh;
   width: 12.44681vh;
   height: 12.44681vh;
-  background: url(./images/materials/txt_round_1.svg) center/cover no-repeat;
+  background: url(../images/materials/txt_round_1.svg) center/cover no-repeat;
   -webkit-animation: rotate 10s infinite linear;
   animation: rotate 10s infinite linear;
   opacity: 0;
@@ -342,11 +342,11 @@ i {
   height: 12.44681vh;
 }
 .text-decor--rotated.decorator-1:after {
-  background: url(./images/materials/txt_round_1.svg) center/cover no-repeat;
+  background: url(../images/materials/txt_round_1.svg) center/cover no-repeat;
   animation: rotate 10s infinite linear;
 }
 .text-decor--rotated.decorator-2:after {
-  background: url(./images/materials/txt_round_2.svg) center/cover no-repeat;
+  background: url(../images/materials/txt_round_2.svg) center/cover no-repeat;
   animation: rotate 10s infinite linear;
 }
 .text-decor--rotated.decorator-3:after {
@@ -356,7 +356,7 @@ i {
   left: -6.38298vh;
   width: 12.44681vh;
   height: 12.44681vh;
-  background: url(./images/materials/txt_round_3.svg) center/cover no-repeat;
+  background: url(../images/materials/txt_round_3.svg) center/cover no-repeat;
   -webkit-animation: rotate 10s infinite linear;
   animation: rotate 10s infinite linear;
 }
@@ -374,17 +374,17 @@ i {
   }
   .text-decor--rotated.decorator-1:after,
   .text-decor--rotated:after {
-    background: url(./images/materials/txt_round_1.svg) center/cover no-repeat;
+    background: url(../images/materials/txt_round_1.svg) center/cover no-repeat;
     -webkit-animation: rotate 10s infinite linear;
     animation: rotate 10s infinite linear;
   }
   .text-decor--rotated.decorator-2:after {
-    background: url(./images/materials/txt_round_2.svg) center/cover no-repeat;
+    background: url(../images/materials/txt_round_2.svg) center/cover no-repeat;
     -webkit-animation: rotate 10s infinite linear;
     animation: rotate 10s infinite linear;
   }
   .text-decor--rotated.decorator-3:after {
-    background: url(./images/materials/txt_round_3.svg) center/cover no-repeat;
+    background: url(../images/materials/txt_round_3.svg) center/cover no-repeat;
     -webkit-animation: rotate 10s infinite linear;
     animation: rotate 10s infinite linear;
   }
@@ -776,7 +776,7 @@ i {
   left: -60px;
   width: 117px;
   height: 117px;
-  background: url(./images/section_2/title_decor.png) center/cover no-repeat;
+  background: url(../images/section_2/title_decor.png) center/cover no-repeat;
   -webkit-animation: rotate 10s infinite linear;
   animation: rotate 10s infinite linear;
 }
@@ -896,7 +896,7 @@ body {
 .logo__link {
   position: relative;
   display: inline-block;
-  background: url(./images/logo/logo.png) center/100% no-repeat;
+  background: url(../images/logo/logo.png) center/100% no-repeat;
   width: 27.65957vh;
   height: 5.10638vh;
 }
@@ -933,7 +933,7 @@ body {
   padding: 2% 0 0 5%;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  background: url(./images/materials/logo_icon_for_menu.svg) left center/cover no-repeat #31b043;
+  background: url(../images/materials/logo_icon_for_menu.svg) left center/cover no-repeat #31b043;
   z-index: 99999999;
 }
 .menu__header {
@@ -1128,7 +1128,7 @@ body {
   display: inline-block;
   width: 2.76596vh;
   height: 2.12766vh;
-  background: url(./images/burger/burger.png) center/cover no-repeat;
+  background: url(../images/burger/burger.png) center/cover no-repeat;
 }
 .jBox-container {
   width: 100%;
@@ -1303,7 +1303,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url(./images/section_1/section_bg.png) left top/cover no-repeat rgba(0, 0, 0, 0.6);
+  background: url(../images/section_1/section_bg.png) left top/cover no-repeat rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 .section_1 .sidebar,
@@ -1376,7 +1376,7 @@ body {
   bottom: 0;
   display: inline-block;
   margin: auto;
-  background: url(./images/section_1/bottle.png) top center/contain no-repeat;
+  background: url(../images/section_1/bottle.png) top center/contain no-repeat;
   z-index: 1;
 }
 .section_2 {
@@ -1413,7 +1413,7 @@ body {
 .section_2__decor {
   width: 56.38298vh;
   height: 13.82979vh;
-  background: url(./images/materials/logo_icon.svg) center center/cover no-repeat;
+  background: url(../images/materials/logo_icon.svg) center center/cover no-repeat;
 }
 .section_2__right-side {
   position: absolute;
@@ -1457,7 +1457,7 @@ body {
   margin-right: 4.78723vh;
   width: 47.87234vh;
   height: 78.7234vh;
-  background: url(./images/section_2/man.png) center/contain no-repeat;
+  background: url(../images/section_2/man.png) center/contain no-repeat;
 }
 .section_2__right-side .image-man:before {
   content: "";
@@ -1470,7 +1470,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(./images/section_2/man_2.png) center/contain no-repeat;
+  background: url(../images/section_2/man_2.png) center/contain no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -1522,7 +1522,7 @@ body {
   position: relative;
   width: 48.93617vh;
   height: 72.34043vh;
-  background: url(./images/section_2/woman.png) center/contain no-repeat;
+  background: url(../images/section_2/woman.png) center/contain no-repeat;
   z-index: 3;
 }
 .section_2__right-side .image-woman:before {
@@ -1536,7 +1536,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background: url(./images/section_2/woman_2.png) center/contain no-repeat;
+  background: url(../images/section_2/woman_2.png) center/contain no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -1643,7 +1643,7 @@ body {
   flex: 0 1 18%;
 }
 .section_3 .hero {
-  background: url(./images/section_3/bg.png) left top/cover no-repeat rgba(0, 0, 0, 0.6);
+  background: url(../images/section_3/bg.png) left top/cover no-repeat rgba(0, 0, 0, 0.6);
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 82%;
   -ms-flex: 0 1 82%;
@@ -1725,7 +1725,7 @@ body {
 .section_4__decor {
   width: 100%;
   height: 13.82979vh;
-  background: url(./images/section_2/decor.png) center center/cover no-repeat;
+  background: url(../images/section_2/decor.png) center center/cover no-repeat;
 }
 .section_4 .title-stroke {
   display: block;
@@ -1864,7 +1864,7 @@ body {
   max-width: none;
   width: 206.38298vh;
   height: 100vh;
-  background: url(./images/section_5/bg.png) left top/cover no-repeat rgba(0, 0, 0, 0.9);
+  background: url(../images/section_5/bg.png) left top/cover no-repeat rgba(0, 0, 0, 0.9);
 }
 .section_5 .container,
 .section_5 .hero {
@@ -2159,7 +2159,7 @@ body {
   .section_4__decor {
     width: 51.75781vh;
     height: 12.69531vh;
-    background: url(./images/section_2/decor.png) center center/cover no-repeat;
+    background: url(../images/section_2/decor.png) center center/cover no-repeat;
   }
   .section_4 .card-content__card-title {
     padding: 0 6.83594vh 0.97656vh;
