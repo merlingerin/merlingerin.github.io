@@ -1409,11 +1409,20 @@ body {
   max-width: 65.42553vh;
   letter-spacing: 0.15319vh;
   margin-bottom: 11.70213vh;
+
 }
 .section_2__decor {
   width: 56.38298vh;
   height: 13.82979vh;
   background: url(../images/materials/logo_icon.svg) center center/cover no-repeat;
+}
+.section_2__paragraph, .section_2__decor {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  transition-delay: 1s;
+}
+.activated .section_2__paragraph, .activated .section_2__decor {
+  opacity: 1;
 }
 .section_2__right-side {
   position: absolute;
@@ -1475,10 +1484,10 @@ body {
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-.section_2__right-side .image-man:hover:before {
+.activated .section_2__right-side .image-man:before {
   opacity: 1;
-  -webkit-animation: blame 1.5s infinite ease-in-out;
-  animation: blame 1.5s infinite ease-in-out;
+  -webkit-animation: blame 1.5s 3 ease-in-out;
+  animation: blame 1.5s 3 ease-in-out;
 }
 .section_2__right-side .image-man .text-line {
   width: 50%;
@@ -1541,10 +1550,10 @@ body {
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-.section_2__right-side .image-woman:hover:before {
+.activated .section_2__right-side .image-woman:before {
   opacity: 1;
-  -webkit-animation: blame 1.5s infinite ease-in-out;
-  animation: blame 1.5s infinite ease-in-out;
+  -webkit-animation: blame 1.5s 3 ease-in-out;
+  animation: blame 1.5s 3 ease-in-out;
 }
 .section_2__right-side .image-woman .text-line {
   width: 62%;
@@ -1592,8 +1601,8 @@ body {
 .touch .section_2 .image-man:before,
 .touch .section_2 .image-woman:before {
   opacity: 1;
-  -webkit-animation: blame 1.5s infinite ease-in-out;
-  animation: blame 1.5s infinite ease-in-out;
+  -webkit-animation: blame 1.5s 3 ease-in-out;
+  animation: blame 1.5s 3 ease-in-out;
 }
 @-webkit-keyframes blame {
   0%,
@@ -2445,7 +2454,6 @@ body {
   }
   .section_4 .card-content {
     position: relative;
-    text-transform: uppercase;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
